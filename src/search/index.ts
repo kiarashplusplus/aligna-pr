@@ -9,13 +9,14 @@ import { bingSearch } from './engines/bing';
 import { duckduckgoSearch } from './engines/duckduckgo';
 import { devtoSearch } from './engines/devto';
 import { hackernewsSearch } from './engines/hackernews';
+import { mediumSearch } from './engines/medium';
 import { customCrawl } from './engines/custom-crawl';
 import { SearchResult, SearchOptions } from '../types';
 import { config, SEARCH_QUERIES } from '../config';
 import { logger } from '../utils';
 
 /** Available search engine options */
-export type SearchEngine = 'google' | 'bing' | 'duckduckgo' | 'devto' | 'hackernews' | 'all';
+export type SearchEngine = 'google' | 'bing' | 'duckduckgo' | 'devto' | 'hackernews' | 'medium' | 'all';
 
 /** Extended search options for unified search */
 export interface UnifiedSearchOptions extends SearchOptions {
@@ -123,6 +124,11 @@ export async function search(options: UnifiedSearchOptions): Promise<SearchResul
     searchPromises.push(hackernewsSearch.search({ query, limit: Math.ceil(limit / 4) }));
   }
 
+  // Medium (always available - uses DuckDuckGo + web scraping)
+  if (useAll || engines.includes('medium')) {
+    searchPromises.push(mediumSearch.search({ query, limit: Math.ceil(limit / 4) }));
+  }
+
   // Wait for all searches to complete
   const searchResults = await Promise.allSettled(searchPromises);
 
@@ -197,5 +203,6 @@ export { bingSearch } from './engines/bing';
 export { duckduckgoSearch } from './engines/duckduckgo';
 export { devtoSearch } from './engines/devto';
 export { hackernewsSearch } from './engines/hackernews';
+export { mediumSearch } from './engines/medium';
 export { customCrawl } from './engines/custom-crawl';
 export { scraper } from './scraper';

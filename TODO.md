@@ -12,7 +12,7 @@ Based on PROMPT.md specification review. Core functionality is ~95% complete.
 
 3. [x] **Implement Hacker News search** - Add `src/search/engines/hackernews.ts` using Algolia HN API for "recruiting tools" discussions
 
-4. [ ] **Implement Medium publication search** - Add parser for Medium publications (Better Programming, The Startup, Towards Data Science)
+4. [x] **Implement Medium publication search** - Add parser for Medium publications (Better Programming, The Startup, Towards Data Science)
 
 ---
 
