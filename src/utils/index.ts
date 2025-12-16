@@ -2,4 +2,5 @@
  * Utilities module exports
  */
 
-export { logger, Logger, LogLevel } from './logger';
+export { logger, Logger } from './logger';
+export type { LogLevel } from './logger';

@@ -143,9 +143,6 @@ export const SEARCH_SOURCES = {
 };
 
 /**
- * Keywords for topic detection
- */
-/**
  * Scoring configuration thresholds
  */
 export const SCORING_CONFIG = {

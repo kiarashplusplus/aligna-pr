@@ -8,6 +8,7 @@ import { Readability } from '@mozilla/readability';
 import { scraper } from '../scraper';
 import { Article, ContentType } from '../../types';
 import { ALIGNA, TOPIC_KEYWORDS } from '../../config';
+import { logger } from '../../utils';
 
 /**
  * Extract clean article content from a URL
@@ -17,7 +18,7 @@ export async function extractArticle(url: string): Promise<Article | null> {
     const html = await scraper.fetch(url);
     return parseArticleHtml(url, html);
   } catch (error) {
-    console.error(`Failed to extract article from ${url}:`, error);
+    logger.error(`Failed to extract article from ${url}:`, error);
     return null;
   }
 }
@@ -76,7 +77,7 @@ export function parseArticleHtml(url: string, html: string): Article | null {
       domain,
     };
   } catch (error) {
-    console.error(`Failed to parse article HTML:`, error);
+    logger.error(`Failed to parse article HTML:`, error);
     return null;
   }
 }

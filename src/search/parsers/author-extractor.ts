@@ -5,6 +5,7 @@
 import { load, CheerioAPI } from 'cheerio';
 import { scraper } from '../scraper';
 import { AuthorContact, ContactMethod } from '../../types';
+import { logger } from '../../utils';
 
 /**
  * Extract author information from article HTML
@@ -403,7 +404,7 @@ export async function enrichAuthorFromProfile(
 
     return author;
   } catch (error) {
-    console.error(`Failed to enrich author from ${authorPageUrl}:`, error);
+    logger.error(`Failed to enrich author from ${authorPageUrl}:`, error);
     return author;
   }
 }

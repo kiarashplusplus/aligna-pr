@@ -9,6 +9,7 @@ import { bingSearch } from './engines/bing';
 import { customCrawl } from './engines/custom-crawl';
 import { SearchResult, SearchOptions } from '../types';
 import { config, SEARCH_QUERIES } from '../config';
+import { logger } from '../utils';
 
 /** Available search engine options */
 export type SearchEngine = 'google' | 'bing' | 'duckduckgo' | 'devto' | 'hackernews' | 'all';
@@ -126,7 +127,7 @@ export async function search(options: UnifiedSearchOptions): Promise<SearchResul
     if (result.status === 'fulfilled') {
       results.push(...result.value);
     } else {
-      console.error('Search engine error:', result.reason);
+      logger.error('Search engine error:', result.reason);
     }
   }
 

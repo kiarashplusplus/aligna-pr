@@ -5,6 +5,7 @@
 import axios from 'axios';
 import { config } from '../../config';
 import { SearchResult, SearchOptions } from '../../types';
+import { logger } from '../../utils';
 
 export class BingSearchEngine {
   private apiKey: string | undefined;
@@ -26,7 +27,7 @@ export class BingSearchEngine {
    */
   async search(options: SearchOptions): Promise<SearchResult[]> {
     if (!this.isConfigured()) {
-      console.warn('Bing Search API not configured. Skipping Bing search.');
+      logger.warn('Bing Search API not configured. Skipping Bing search.');
       return [];
     }
 
@@ -61,9 +62,9 @@ export class BingSearchEngine {
       }
     } catch (error) {
       if (axios.isAxiosError(error)) {
-        console.error(`Bing Search API error: ${error.response?.status} - ${error.message}`);
+        logger.error(`Bing Search API error: ${error.response?.status} - ${error.message}`);
       } else {
-        console.error('Bing Search error:', error);
+        logger.error('Bing Search error:', error);
       }
     }
 

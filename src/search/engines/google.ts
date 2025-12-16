@@ -5,6 +5,7 @@
 import axios from 'axios';
 import { config } from '../../config';
 import { SearchResult, SearchOptions } from '../../types';
+import { logger } from '../../utils';
 
 export class GoogleSearchEngine {
   private apiKey: string | undefined;
@@ -27,7 +28,7 @@ export class GoogleSearchEngine {
    */
   async search(options: SearchOptions): Promise<SearchResult[]> {
     if (!this.isConfigured()) {
-      console.warn('Google Search API not configured. Skipping Google search.');
+      logger.warn('Google Search API not configured. Skipping Google search.');
       return [];
     }
 
@@ -78,9 +79,9 @@ export class GoogleSearchEngine {
       }
     } catch (error) {
       if (axios.isAxiosError(error)) {
-        console.error(`Google Search API error: ${error.response?.status} - ${error.message}`);
+        logger.error(`Google Search API error: ${error.response?.status} - ${error.message}`);
       } else {
-        console.error('Google Search error:', error);
+        logger.error('Google Search error:', error);
       }
     }
 

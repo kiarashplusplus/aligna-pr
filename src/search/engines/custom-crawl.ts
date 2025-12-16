@@ -7,6 +7,7 @@ import { load } from 'cheerio';
 import { scraper } from '../scraper';
 import { SearchResult, SearchOptions } from '../../types';
 import { SEARCH_SOURCES } from '../../config';
+import { logger } from '../../utils';
 
 export class CustomCrawlEngine {
   /**
@@ -47,7 +48,7 @@ export class CustomCrawlEngine {
         }
       });
     } catch (error) {
-      console.error('DuckDuckGo search error:', error);
+      logger.error('DuckDuckGo search error:', error);
     }
 
     return results;
@@ -83,7 +84,7 @@ export class CustomCrawlEngine {
         }
       });
     } catch (error) {
-      console.error('dev.to search error:', error);
+      logger.error('dev.to search error:', error);
     }
 
     return results;
@@ -123,7 +124,7 @@ export class CustomCrawlEngine {
         }
       }
     } catch (error) {
-      console.error('Hacker News search error:', error);
+      logger.error('Hacker News search error:', error);
     }
 
     return results;
@@ -155,7 +156,7 @@ export class CustomCrawlEngine {
         const siteResults = await this.searchSite(site, query, limitPerSource);
         results.push(...siteResults);
       } catch (error) {
-        console.error(`Error searching ${site}:`, error);
+        logger.error(`Error searching ${site}:`, error);
       }
     }
 
@@ -173,7 +174,7 @@ export class CustomCrawlEngine {
         const siteResults = await this.searchSite(site, query, limitPerSource);
         results.push(...siteResults);
       } catch (error) {
-        console.error(`Error searching ${site}:`, error);
+        logger.error(`Error searching ${site}:`, error);
       }
     }
 
@@ -191,7 +192,7 @@ export class CustomCrawlEngine {
         const siteResults = await this.searchSite(site, query, limitPerSource);
         results.push(...siteResults);
       } catch (error) {
-        console.error(`Error searching ${site}:`, error);
+        logger.error(`Error searching ${site}:`, error);
       }
     }
 
