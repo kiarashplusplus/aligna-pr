@@ -38,9 +38,9 @@ Based on PROMPT.md specification review. Core functionality is ~95% complete.
 
 ## Reporting & UI
 
-11. [ ] **Enhance summary report** - Match PROMPT spec with detailed top-5 breakdown, action items, file manifest
+11. [x] **Enhance summary report** - Match PROMPT spec with detailed top-5 breakdown, action items, file manifest
 
-12. [ ] **Build lightweight web dashboard** - Sortable prospect table, filters by priority/publication/date, export buttons
+12. [x] **Build lightweight web dashboard** - Sortable prospect table, filters by priority/publication/date, export buttons
 
 13. [ ] **Add success metrics tracking** - Track response rate, backlink acquisition rate, false positive rate
 

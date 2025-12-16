@@ -86,6 +86,7 @@ program
       console.log(`  ${chalk.cyan(files.csv)}`);
       console.log(`  ${chalk.cyan(files.drafts + '/')}`);
       console.log(`  ${chalk.cyan(files.report)}`);
+      console.log(`  ${chalk.cyan(files.dashboard)} ${chalk.dim('← Open in browser')}`);
 
       // Print top prospects
       if (result.prospects.length > 0) {
@@ -98,6 +99,7 @@ program
 
       console.log('\n' + chalk.dim('Run `aligna-prospect export` to generate fresh exports'));
       console.log(chalk.dim('Run `aligna-prospect guidelines` to see outreach best practices'));
+      console.log(chalk.dim(`Open ${files.dashboard} in a browser to view the interactive dashboard`));
 
     } catch (error) {
       spinner.fail(chalk.red('Prospecting failed'));
@@ -154,6 +156,7 @@ program
       console.log(`  ${chalk.cyan(files.csv)}`);
       console.log(`  ${chalk.cyan(files.drafts + '/')}`);
       console.log(`  ${chalk.cyan(files.report)}`);
+      console.log(`  ${chalk.cyan(files.dashboard)} ${chalk.dim('← Open in browser')}`);
 
     } catch (error) {
       spinner.fail(chalk.red('Export failed'));
