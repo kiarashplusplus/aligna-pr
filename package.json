@@ -1,0 +1,61 @@
+{
+  "name": "aligna-pr-prospecting",
+  "version": "1.0.0",
+  "description": "Intelligent, ethical PR prospecting tool for Aligna - identifies high-quality backlink opportunities",
+  "main": "dist/index.js",
+  "bin": {
+    "aligna-prospect": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "dev": "ts-node src/cli.ts",
+    "prospect": "ts-node src/cli.ts",
+    "export": "ts-node src/cli.ts export",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint src/**/*.ts",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "pr",
+    "prospecting",
+    "backlinks",
+    "seo",
+    "outreach",
+    "recruiting",
+    "aligna"
+  ],
+  "author": "Aligna Team",
+  "license": "MIT",
+  "dependencies": {
+    "@mozilla/readability": "^0.5.0",
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "commander": "^11.1.0",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "jsdom": "^24.0.0",
+    "openai": "^4.20.0",
+    "ora": "^5.4.1",
+    "chalk": "^4.1.2",
+    "robots-parser": "^3.0.1",
+    "sql.js": "^1.10.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/sql.js": "^1.4.9",
+    "@types/jsdom": "^21.1.6",
+    "@types/node": "^20.10.0",
+    "@types/uuid": "^9.0.0",
+    "eslint": "^8.56.0",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.0",
+    "vitest": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
