@@ -6,6 +6,7 @@
 
 import { googleSearch } from './engines/google';
 import { bingSearch } from './engines/bing';
+import { duckduckgoSearch } from './engines/duckduckgo';
 import { customCrawl } from './engines/custom-crawl';
 import { SearchResult, SearchOptions } from '../types';
 import { config, SEARCH_QUERIES } from '../config';
@@ -105,9 +106,9 @@ export async function search(options: UnifiedSearchOptions): Promise<SearchResul
     searchPromises.push(bingSearch.search({ query, limit: Math.ceil(limit / 2) }));
   }
 
-  // DuckDuckGo (always available)
+  // DuckDuckGo (always available - no API key needed)
   if (useAll || engines.includes('duckduckgo')) {
-    searchPromises.push(customCrawl.searchDuckDuckGo({ query, limit: Math.ceil(limit / 2) }));
+    searchPromises.push(duckduckgoSearch.search({ query, limit: Math.ceil(limit / 2) }));
   }
 
   // dev.to
@@ -191,5 +192,6 @@ export async function comprehensiveSearch(
 // Re-export engines
 export { googleSearch } from './engines/google';
 export { bingSearch } from './engines/bing';
+export { duckduckgoSearch } from './engines/duckduckgo';
 export { customCrawl } from './engines/custom-crawl';
 export { scraper } from './scraper';
