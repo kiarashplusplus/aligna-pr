@@ -8,6 +8,7 @@ import { googleSearch } from './engines/google';
 import { bingSearch } from './engines/bing';
 import { duckduckgoSearch } from './engines/duckduckgo';
 import { devtoSearch } from './engines/devto';
+import { hackernewsSearch } from './engines/hackernews';
 import { customCrawl } from './engines/custom-crawl';
 import { SearchResult, SearchOptions } from '../types';
 import { config, SEARCH_QUERIES } from '../config';
@@ -117,9 +118,9 @@ export async function search(options: UnifiedSearchOptions): Promise<SearchResul
     searchPromises.push(devtoSearch.search({ query, limit: Math.ceil(limit / 4) }));
   }
 
-  // Hacker News
+  // Hacker News (always available - uses Algolia HN API)
   if (useAll || engines.includes('hackernews')) {
-    searchPromises.push(customCrawl.searchHackerNews(query, Math.ceil(limit / 4)));
+    searchPromises.push(hackernewsSearch.search({ query, limit: Math.ceil(limit / 4) }));
   }
 
   // Wait for all searches to complete
@@ -195,5 +196,6 @@ export { googleSearch } from './engines/google';
 export { bingSearch } from './engines/bing';
 export { duckduckgoSearch } from './engines/duckduckgo';
 export { devtoSearch } from './engines/devto';
+export { hackernewsSearch } from './engines/hackernews';
 export { customCrawl } from './engines/custom-crawl';
 export { scraper } from './scraper';

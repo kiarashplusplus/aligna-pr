@@ -10,7 +10,7 @@ Based on PROMPT.md specification review. Core functionality is ~95% complete.
 
 2. [x] **Implement dev.to API parser** - Add `src/search/engines/devto.ts` with tag-based search (recruiting, ai, voice)
 
-3. [ ] **Implement Hacker News search** - Add `src/search/engines/hackernews.ts` using Algolia HN API for "recruiting tools" discussions
+3. [x] **Implement Hacker News search** - Add `src/search/engines/hackernews.ts` using Algolia HN API for "recruiting tools" discussions
 
 4. [ ] **Implement Medium publication search** - Add parser for Medium publications (Better Programming, The Startup, Towards Data Science)
 
