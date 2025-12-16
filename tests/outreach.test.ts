@@ -18,6 +18,11 @@ import {
   analyzeArticleCompetitors,
   getCompetitorSentimentSummary,
 } from '../src/outreach/competitor-sentiment';
+import {
+  isOpenAIConfigured,
+  generateEnhancedAngle,
+  generateBatchAngles,
+} from '../src/outreach/openai-angle';
 import { Article, AuthorContact } from '../src/types';
 
 // Mock article data
@@ -373,5 +378,56 @@ describe('Competitor Sentiment Analysis', () => {
     
     expect(analysis.bestAngle).toBeTruthy();
     expect(analysis.overallOpportunity).toContain('High opportunity');
+  });
+});
+
+describe('OpenAI Angle Generator', () => {
+  it('should report OpenAI as not configured without API key', () => {
+    // Without OPENAI_API_KEY set, should return false
+    const originalKey = process.env.OPENAI_API_KEY;
+    delete process.env.OPENAI_API_KEY;
+    
+    // Verify the function exists and returns boolean
+    expect(typeof isOpenAIConfigured()).toBe('boolean');
+    
+    // Restore
+    if (originalKey) process.env.OPENAI_API_KEY = originalKey;
+  });
+
+  it('should export all expected functions', async () => {
+    const openaiModule = await import('../src/outreach/openai-angle');
+    
+    expect(typeof openaiModule.isOpenAIConfigured).toBe('function');
+    expect(typeof openaiModule.generateEnhancedAngle).toBe('function');
+    expect(typeof openaiModule.generateEnhancedEmailDraft).toBe('function');
+    expect(typeof openaiModule.generateBatchAngles).toBe('function');
+    expect(typeof openaiModule.analyzeArticleSentiment).toBe('function');
+  });
+
+  it('should return fallback angle when OpenAI not configured', async () => {
+    const article = createMockArticle({
+      fullText: 'This is an article about recruiting tools.',
+    });
+    
+    const fallback = 'Test fallback angle';
+    const result = await generateEnhancedAngle(article, undefined, fallback);
+    
+    // Without API key, should return fallback
+    expect(result).toBeTruthy();
+  });
+
+  it('should return fallback angles in batch mode when OpenAI not configured', async () => {
+    const articles = [
+      createMockArticle({ url: 'https://example.com/1', title: 'Article 1' }),
+      createMockArticle({ url: 'https://example.com/2', title: 'Article 2' }),
+    ];
+    
+    const fallbackGenerator = (article: Article) => `Fallback for ${article.title}`;
+    
+    const results = await generateBatchAngles(articles, fallbackGenerator);
+    
+    expect(results.size).toBe(2);
+    expect(results.get('https://example.com/1')).toBe('Fallback for Article 1');
+    expect(results.get('https://example.com/2')).toBe('Fallback for Article 2');
   });
 });

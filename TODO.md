@@ -32,7 +32,7 @@ Based on PROMPT.md specification review. Core functionality is ~95% complete.
 
 9. [x] **Add competitor sentiment analysis** - Detect negative mentions (e.g., "HireVue expensive") for positioning angles
 
-10. [ ] **Wire OpenAI for enhanced angle generation** - Use GPT to generate more personalized outreach angles (dependency exists but not connected)
+10. [x] **Wire OpenAI for enhanced angle generation** - Use GPT to generate more personalized outreach angles (dependency exists but not connected)
 
 ---
 

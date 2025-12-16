@@ -6,6 +6,13 @@ import { Article, AuthorContact, OutreachRecommendation, Priority } from '../typ
 import { generateOutreachAngle, generateOpportunityReason, getCompetitorAngle } from './angle-generator';
 import { generateSubject, generateEmailDraft } from './email-template';
 import { analyzeArticleCompetitors, enhanceAngleWithSentiment, getCompetitorSentimentSummary } from './competitor-sentiment';
+import { 
+  isOpenAIConfigured, 
+  generateEnhancedAngle, 
+  generateEnhancedEmailDraft,
+  generateBatchAngles,
+  analyzeArticleSentiment,
+} from './openai-angle';
 import { getPriority } from '../scoring';
 
 /**
@@ -42,6 +49,67 @@ export function generateOutreachRecommendation(
   const subject = generateSubject(article);
 
   // Estimate response rate
+  const responseRate = estimateResponseRate(author, article, score);
+
+  return {
+    score,
+    priority,
+    opportunityReason,
+    angle,
+    suggestedSubject: subject,
+    suggestedEmailDraft: emailDraft,
+    contactMethod: author.bestContactMethod,
+    estimatedResponseRate: responseRate,
+  };
+}
+
+/**
+ * Generate outreach recommendation with OpenAI-enhanced angles (async)
+ * Falls back to rule-based generation if OpenAI is not configured
+ */
+export async function generateEnhancedOutreachRecommendation(
+  article: Article,
+  author: AuthorContact,
+  score: number
+): Promise<OutreachRecommendation> {
+  const priority = getPriority(score);
+  const opportunityReason = generateOpportunityReason(article, score);
+  
+  // Get base angle from rule-based system
+  const baseAngle = generateOutreachAngle(article);
+  
+  // Try to enhance with OpenAI if configured
+  let angle: string;
+  let emailDraft: string;
+  
+  if (isOpenAIConfigured()) {
+    // Generate enhanced angle with GPT
+    angle = await generateEnhancedAngle(article, author, baseAngle);
+    
+    // Try to generate enhanced email draft
+    const enhancedEmail = await generateEnhancedEmailDraft(article, author, angle);
+    emailDraft = enhancedEmail || generateEmailDraft(article, author, angle);
+  } else {
+    // Fall back to competitor sentiment enhancement
+    const competitorAnalysis = analyzeArticleCompetitors(article);
+    angle = baseAngle;
+    
+    if (competitorAnalysis.hasCompetitorMentions && competitorAnalysis.bestAngle) {
+      const negativeOrMixed = competitorAnalysis.competitors.some(
+        c => c.sentiment === 'negative' || c.sentiment === 'mixed'
+      );
+      if (negativeOrMixed) {
+        angle = `${competitorAnalysis.bestAngle}\n\n${baseAngle}`;
+      } else {
+        const competitorAngle = getCompetitorAngle(article);
+        angle = competitorAngle ? `${baseAngle} ${competitorAngle}` : baseAngle;
+      }
+    }
+    
+    emailDraft = generateEmailDraft(article, author, angle);
+  }
+
+  const subject = generateSubject(article);
   const responseRate = estimateResponseRate(author, article, score);
 
   return {
@@ -138,3 +206,10 @@ export {
   type Sentiment,
   type SentimentAspect,
 } from './competitor-sentiment';
+export {
+  isOpenAIConfigured,
+  generateEnhancedAngle,
+  generateEnhancedEmailDraft,
+  generateBatchAngles,
+  analyzeArticleSentiment,
+} from './openai-angle';
