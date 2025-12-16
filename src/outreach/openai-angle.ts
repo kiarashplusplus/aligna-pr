@@ -5,7 +5,7 @@
 
 import OpenAI from 'openai';
 import { Article, AuthorContact } from '../types';
-import { config, ALIGNA } from '../config';
+import { config } from '../config';
 import { logger } from '../utils/logger';
 
 /** Cached OpenAI client */

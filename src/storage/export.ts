@@ -219,6 +219,11 @@ export function generateSummaryReport(result: ProspectingResult): string {
 
   // Top 5 prospects with full details
   const top5 = prospects.slice(0, 5);
+  
+  // Helper for safe percentage calculation
+  const pct = (count: number) => prospects.length > 0 
+    ? ((count / prospects.length) * 100).toFixed(1) 
+    : '0.0';
 
   let report = `# 📊 Aligna PR Prospecting Report
 Generated: ${metadata.searchDate.toISOString().split('T')[0]} at ${metadata.searchDate.toISOString().split('T')[1].slice(0, 5)} UTC
@@ -242,11 +247,11 @@ Generated: ${metadata.searchDate.toISOString().split('T')[0]} at ${metadata.sear
 
 | Priority | Count | Percentage |
 |----------|-------|------------|
-| 🔥 Excellent (80-100) | ${byPriority.excellent.length} | ${((byPriority.excellent.length / prospects.length) * 100).toFixed(1)}% |
-| ✅ Strong (60-79) | ${byPriority.strong.length} | ${((byPriority.strong.length / prospects.length) * 100).toFixed(1)}% |
-| 🤔 Moderate (40-59) | ${byPriority.moderate.length} | ${((byPriority.moderate.length / prospects.length) * 100).toFixed(1)}% |
-| 🤷 Weak (20-39) | ${byPriority.weak.length} | ${((byPriority.weak.length / prospects.length) * 100).toFixed(1)}% |
-| ❌ Skip (0-19) | ${byPriority.skip.length} | ${((byPriority.skip.length / prospects.length) * 100).toFixed(1)}% |
+| 🔥 Excellent (80-100) | ${byPriority.excellent.length} | ${pct(byPriority.excellent.length)}% |
+| ✅ Strong (60-79) | ${byPriority.strong.length} | ${pct(byPriority.strong.length)}% |
+| 🤔 Moderate (40-59) | ${byPriority.moderate.length} | ${pct(byPriority.moderate.length)}% |
+| 🤷 Weak (20-39) | ${byPriority.weak.length} | ${pct(byPriority.weak.length)}% |
+| ❌ Skip (0-19) | ${byPriority.skip.length} | ${pct(byPriority.skip.length)}% |
 
 ---
 
@@ -331,7 +336,7 @@ ${sentimentSummary !== 'No competitor mentions detected.' ? `- **Competitor Sent
 `;
 
   for (const [type, count] of Array.from(contentTypes.entries()).sort((a, b) => b[1] - a[1])) {
-    report += `| ${type} | ${count} | ${((count / prospects.length) * 100).toFixed(1)}% |\n`;
+    report += `| ${type} | ${count} | ${pct(count)}% |\n`;
   }
 
   if (topCompetitors.length > 0) {
@@ -353,9 +358,9 @@ ${sentimentSummary !== 'No competitor mentions detected.' ? `- **Competitor Sent
 
 | Response Rate | Count | Percentage |
 |---------------|-------|------------|
-| 🟢 High | ${responseRates.high} | ${((responseRates.high / prospects.length) * 100).toFixed(1)}% |
-| 🟡 Medium | ${responseRates.medium} | ${((responseRates.medium / prospects.length) * 100).toFixed(1)}% |
-| 🔴 Low | ${responseRates.low} | ${((responseRates.low / prospects.length) * 100).toFixed(1)}% |
+| 🟢 High | ${responseRates.high} | ${pct(responseRates.high)}% |
+| 🟡 Medium | ${responseRates.medium} | ${pct(responseRates.medium)}% |
+| 🔴 Low | ${responseRates.low} | ${pct(responseRates.low)}% |
 
 ---
 

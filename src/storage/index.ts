@@ -9,4 +9,5 @@ export {
   exportEmailDrafts,
   exportAll,
   generateSummaryReport,
+  generateDashboard,
 } from './export';
