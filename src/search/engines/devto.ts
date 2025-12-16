@@ -123,18 +123,13 @@ export class DevToSearchEngine {
         }
       }
 
-      // If API didn't return enough results, fallback to web search
-      if (results.length < limit) {
-        const webResults = await this.searchWeb(query, limit - results.length);
-        results.push(...webResults);
-      }
+      // Note: Web scraping fallback disabled - dev.to robots.txt blocks it
+      // The API is the primary and reliable method for dev.to search
 
       logger.debug(`Dev.to found ${results.length} results for: ${query}`);
     } catch (error) {
-      logger.warn('Dev.to API search failed, falling back to web search');
-      // Fallback to web scraping
-      const webResults = await this.searchWeb(query, limit);
-      results.push(...webResults);
+      logger.warn(`Dev.to API search failed: ${error instanceof Error ? error.message : 'Unknown error'}`);
+      // Web scraping fallback not available due to robots.txt restrictions
     }
 
     return results;
