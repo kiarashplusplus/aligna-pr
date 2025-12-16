@@ -30,7 +30,7 @@ Based on PROMPT.md specification review. Core functionality is ~95% complete.
 
 8. [ ] **Implement advanced deduplication** - Detect syndicated content across sources using title/author/date matching
 
-9. [ ] **Add competitor sentiment analysis** - Detect negative mentions (e.g., "HireVue expensive") for positioning angles
+9. [x] **Add competitor sentiment analysis** - Detect negative mentions (e.g., "HireVue expensive") for positioning angles
 
 10. [ ] **Wire OpenAI for enhanced angle generation** - Use GPT to generate more personalized outreach angles (dependency exists but not connected)
 

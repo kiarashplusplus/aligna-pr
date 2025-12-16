@@ -14,6 +14,10 @@ import {
   generateSpecificValue,
   generateAsk,
 } from '../src/outreach/email-template';
+import {
+  analyzeArticleCompetitors,
+  getCompetitorSentimentSummary,
+} from '../src/outreach/competitor-sentiment';
 import { Article, AuthorContact } from '../src/types';
 
 // Mock article data
@@ -279,5 +283,95 @@ describe('Opportunity Reason Generator', () => {
     const reason = generateOpportunityReason(article, 60);
     
     expect(reason).toContain('Listicle');
+  });
+});
+
+describe('Competitor Sentiment Analysis', () => {
+  it('should detect negative sentiment about HireVue cost', () => {
+    const article = createMockArticle({
+      fullText: 'HireVue is a popular tool but many companies find it expensive and the pricing is not transparent. The cost can be prohibitive for startups.',
+      mentionsCompetitors: ['hirevue'],
+    });
+    
+    const analysis = analyzeArticleCompetitors(article);
+    
+    expect(analysis.hasCompetitorMentions).toBe(true);
+    expect(analysis.competitors.length).toBe(1);
+    expect(analysis.competitors[0].competitor).toBe('hirevue');
+    expect(analysis.competitors[0].sentiment).toBe('negative');
+    expect(analysis.competitors[0].aspects.some((a: any) => a.aspect === 'cost')).toBe(true);
+  });
+
+  it('should detect negative sentiment about candidate experience', () => {
+    const article = createMockArticle({
+      fullText: 'Modern Hire video interviews leave candidates feeling awkward and uncomfortable recording themselves. The experience can be stressful and candidates often complain about poor performance.',
+      mentionsCompetitors: ['modern hire'],
+    });
+    
+    const analysis = analyzeArticleCompetitors(article);
+    
+    expect(analysis.hasCompetitorMentions).toBe(true);
+    expect(analysis.competitors[0].sentiment).toBe('negative');
+    expect(analysis.competitors[0].aspects.some((a: any) => a.aspect === 'experience')).toBe(true);
+  });
+
+  it('should detect neutral sentiment when no sentiment keywords', () => {
+    const article = createMockArticle({
+      fullText: 'Spark Hire is one of the video interview platforms available in the market today.',
+      mentionsCompetitors: ['spark hire'],
+    });
+    
+    const analysis = analyzeArticleCompetitors(article);
+    
+    expect(analysis.hasCompetitorMentions).toBe(true);
+    expect(analysis.competitors[0].sentiment).toBe('neutral');
+  });
+
+  it('should detect mixed sentiment', () => {
+    const article = createMockArticle({
+      fullText: 'HireVue is feature-rich and comprehensive, but it can be expensive and the interface feels clunky at times.',
+      mentionsCompetitors: ['hirevue'],
+    });
+    
+    const analysis = analyzeArticleCompetitors(article);
+    
+    expect(analysis.hasCompetitorMentions).toBe(true);
+    expect(analysis.competitors[0].sentiment).toBe('mixed');
+  });
+
+  it('should return empty analysis when no competitors mentioned', () => {
+    const article = createMockArticle({
+      fullText: 'AI recruiting tools are becoming more popular.',
+      mentionsCompetitors: [],
+    });
+    
+    const analysis = analyzeArticleCompetitors(article);
+    
+    expect(analysis.hasCompetitorMentions).toBe(false);
+    expect(analysis.competitors.length).toBe(0);
+  });
+
+  it('should generate sentiment summary', () => {
+    const article = createMockArticle({
+      fullText: 'HireVue is expensive. Karat is effective but costly.',
+      mentionsCompetitors: ['hirevue', 'karat'],
+    });
+    
+    const summary = getCompetitorSentimentSummary(article);
+    
+    expect(summary).toContain('hirevue');
+    expect(summary).toContain('karat');
+  });
+
+  it('should prioritize negative sentiment in suggested angles', () => {
+    const article = createMockArticle({
+      fullText: 'HireVue is frustrating and expensive. The user experience is poor.',
+      mentionsCompetitors: ['hirevue'],
+    });
+    
+    const analysis = analyzeArticleCompetitors(article);
+    
+    expect(analysis.bestAngle).toBeTruthy();
+    expect(analysis.overallOpportunity).toContain('High opportunity');
   });
 });

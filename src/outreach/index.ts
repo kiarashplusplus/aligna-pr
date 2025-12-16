@@ -5,6 +5,7 @@
 import { Article, AuthorContact, OutreachRecommendation, Priority } from '../types';
 import { generateOutreachAngle, generateOpportunityReason, getCompetitorAngle } from './angle-generator';
 import { generateSubject, generateEmailDraft } from './email-template';
+import { analyzeArticleCompetitors, enhanceAngleWithSentiment, getCompetitorSentimentSummary } from './competitor-sentiment';
 import { getPriority } from '../scoring';
 
 /**
@@ -16,12 +17,26 @@ export function generateOutreachRecommendation(
   score: number
 ): OutreachRecommendation {
   const priority = getPriority(score);
-  const angle = generateOutreachAngle(article);
+  const baseAngle = generateOutreachAngle(article);
   const opportunityReason = generateOpportunityReason(article, score);
-  const competitorAngle = getCompetitorAngle(article);
-
-  // Combine angles if we have competitor-specific insight
-  const fullAngle = competitorAngle ? `${angle} ${competitorAngle}` : angle;
+  
+  // Enhance angle with sentiment-aware competitor analysis
+  const competitorAnalysis = analyzeArticleCompetitors(article);
+  let angle = baseAngle;
+  
+  if (competitorAnalysis.hasCompetitorMentions && competitorAnalysis.bestAngle) {
+    // Use sentiment-enhanced angle if we have negative/mixed competitor mentions
+    const negativeOrMixed = competitorAnalysis.competitors.some(
+      c => c.sentiment === 'negative' || c.sentiment === 'mixed'
+    );
+    if (negativeOrMixed) {
+      angle = `${competitorAnalysis.bestAngle}\n\n${baseAngle}`;
+    } else {
+      // Fallback to basic competitor angle
+      const competitorAngle = getCompetitorAngle(article);
+      angle = competitorAngle ? `${baseAngle} ${competitorAngle}` : baseAngle;
+    }
+  }
 
   const emailDraft = generateEmailDraft(article, author, angle);
   const subject = generateSubject(article);
@@ -33,7 +48,7 @@ export function generateOutreachRecommendation(
     score,
     priority,
     opportunityReason,
-    angle: fullAngle,
+    angle,
     suggestedSubject: subject,
     suggestedEmailDraft: emailDraft,
     contactMethod: author.bestContactMethod,
@@ -114,3 +129,12 @@ export function getOutreachBestPractices(): string {
 // Re-export utilities
 export { generateOutreachAngle, getCompetitorAngle, generateOpportunityReason } from './angle-generator';
 export { generateSubject, generateEmailDraft, generateFollowUpDraft, getResponseTemplates } from './email-template';
+export { 
+  analyzeArticleCompetitors, 
+  getCompetitorSentimentSummary, 
+  enhanceAngleWithSentiment,
+  type CompetitorSentimentAnalysis,
+  type ArticleCompetitorAnalysis,
+  type Sentiment,
+  type SentimentAspect,
+} from './competitor-sentiment';
