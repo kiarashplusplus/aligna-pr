@@ -8,7 +8,7 @@ Based on PROMPT.md specification review. Core functionality is ~95% complete.
 
 1. [x] **Implement DuckDuckGo search engine** - Add `src/search/engines/duckduckgo.ts` for privacy-focused audience coverage
 
-2. [ ] **Implement dev.to API parser** - Add `src/search/engines/devto.ts` with tag-based search (recruiting, ai, voice)
+2. [x] **Implement dev.to API parser** - Add `src/search/engines/devto.ts` with tag-based search (recruiting, ai, voice)
 
 3. [ ] **Implement Hacker News search** - Add `src/search/engines/hackernews.ts` using Algolia HN API for "recruiting tools" discussions
 
