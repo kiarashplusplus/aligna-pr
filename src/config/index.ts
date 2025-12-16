@@ -145,6 +145,73 @@ export const SEARCH_SOURCES = {
 /**
  * Keywords for topic detection
  */
+/**
+ * Scoring configuration thresholds
+ */
+export const SCORING_CONFIG = {
+  wordCountThresholds: [
+    { min: 2500, points: 8 },
+    { min: 1800, points: 7 },
+    { min: 1500, points: 6 },
+    { min: 1000, points: 5 },
+    { min: 800, points: 4 },
+    { min: 500, points: 3 },
+    { min: 0, points: 2 },
+  ],
+  contentTypeScores: {
+    guide: 7,
+    comparison: 7,
+    listicle: 6,
+    'case-study': 5,
+    tutorial: 5,
+    news: 4,
+    opinion: 3,
+    default: 3,
+  } as Record<string, number>,
+};
+
+/**
+ * Publication authority tiers (configurable)
+ */
+export const PUBLICATION_TIERS = {
+  major: [
+    'techcrunch',
+    'forbes',
+    'wired',
+    'venturebeat',
+    'theverge',
+    'mashable',
+    'hbr',
+    'harvard business review',
+    'mit technology review',
+    'fast company',
+    'inc.com',
+  ],
+  hrTech: [
+    'hrtechnologist',
+    'hr technologist',
+    'recruiting daily',
+    'recruitingdaily',
+    'ere',
+    'tlnt',
+    'hrdive',
+    'hr dive',
+    'shrm',
+    'g2',
+    'capterra',
+    'software advice',
+  ],
+  techBlogs: [
+    'medium',
+    'dev.to',
+    'hackernoon',
+    'towards data science',
+    'better programming',
+    'freecodecamp',
+    'smashing magazine',
+  ],
+};
+
 export const TOPIC_KEYWORDS = {
   'voice-ai': [
     'voice ai',

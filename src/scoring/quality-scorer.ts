@@ -3,46 +3,7 @@
  */
 
 import { Article } from '../types';
-
-// Publication authority tiers
-const MAJOR_PUBLICATIONS = [
-  'techcrunch',
-  'forbes',
-  'wired',
-  'venturebeat',
-  'theverge',
-  'mashable',
-  'hbr',
-  'harvard business review',
-  'mit technology review',
-  'fast company',
-  'inc.com',
-];
-
-const QUALITY_TECH_BLOGS = [
-  'medium',
-  'dev.to',
-  'hackernoon',
-  'towards data science',
-  'better programming',
-  'freecodecamp',
-  'smashing magazine',
-];
-
-const HR_TECH_PUBLICATIONS = [
-  'hrtechnologist',
-  'hr technologist',
-  'recruiting daily',
-  'recruitingdaily',
-  'ere',
-  'tlnt',
-  'hrdive',
-  'hr dive',
-  'shrm',
-  'g2',
-  'capterra',
-  'software advice',
-];
+import { SCORING_CONFIG, PUBLICATION_TIERS } from '../config';
 
 /**
  * Score article quality (0-20 points)
@@ -65,57 +26,40 @@ export function scoreArticleQuality(article: Article): number {
 }
 
 /**
- * Score based on word count
+ * Score based on word count (uses configurable thresholds)
  */
 function scoreWordCount(wordCount: number): number {
-  if (wordCount >= 2500) return 8;
-  if (wordCount >= 1800) return 7;
-  if (wordCount >= 1500) return 6;
-  if (wordCount >= 1000) return 5;
-  if (wordCount >= 800) return 4;
-  if (wordCount >= 500) return 3;
+  for (const threshold of SCORING_CONFIG.wordCountThresholds) {
+    if (wordCount >= threshold.min) {
+      return threshold.points;
+    }
+  }
   return 2;
 }
 
 /**
- * Score based on content type
+ * Score based on content type (uses configurable scores)
  */
 function scoreContentType(contentType: string): number {
-  switch (contentType) {
-    case 'guide':
-      return 7;
-    case 'comparison':
-      return 7;
-    case 'listicle':
-      return 6;
-    case 'case-study':
-      return 5;
-    case 'tutorial':
-      return 5;
-    case 'news':
-      return 4;
-    case 'opinion':
-      return 3;
-    default:
-      return 3;
-  }
+  return SCORING_CONFIG.contentTypeScores[contentType] ?? SCORING_CONFIG.contentTypeScores.default;
 }
 
 /**
  * Score publication authority (bonus scoring, not included in main 20 points)
+ * Can be used for additional weighting or filtering
  */
 export function scorePublicationAuthority(publicationName: string): number {
   const pubLower = publicationName.toLowerCase();
 
-  if (MAJOR_PUBLICATIONS.some((p) => pubLower.includes(p))) {
+  if (PUBLICATION_TIERS.major.some((p) => pubLower.includes(p))) {
     return 10;
   }
 
-  if (HR_TECH_PUBLICATIONS.some((p) => pubLower.includes(p))) {
+  if (PUBLICATION_TIERS.hrTech.some((p) => pubLower.includes(p))) {
     return 8;
   }
 
-  if (QUALITY_TECH_BLOGS.some((p) => pubLower.includes(p))) {
+  if (PUBLICATION_TIERS.techBlogs.some((p) => pubLower.includes(p))) {
     return 6;
   }
 

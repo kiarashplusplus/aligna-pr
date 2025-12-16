@@ -1,5 +1,7 @@
 /**
  * Unified search interface across all engines
+ * Provides a single entry point for searching multiple sources
+ * @module search
  */
 
 import { googleSearch } from './engines/google';
@@ -8,15 +10,20 @@ import { customCrawl } from './engines/custom-crawl';
 import { SearchResult, SearchOptions } from '../types';
 import { config, SEARCH_QUERIES } from '../config';
 
+/** Available search engine options */
 export type SearchEngine = 'google' | 'bing' | 'duckduckgo' | 'devto' | 'hackernews' | 'all';
 
+/** Extended search options for unified search */
 export interface UnifiedSearchOptions extends SearchOptions {
+  /** Specific engines to use (defaults to 'all') */
   engines?: SearchEngine[];
+  /** Specific source domains to search within */
   sources?: string[];
 }
 
 /**
  * Deduplicate search results by URL
+ * Normalizes URLs to catch duplicates with different protocols/www prefixes
  */
 function deduplicateResults(results: SearchResult[]): SearchResult[] {
   const seen = new Set<string>();
@@ -36,7 +43,33 @@ function deduplicateResults(results: SearchResult[]): SearchResult[] {
 }
 
 /**
- * Search across multiple engines
+ * Search across multiple engines and aggregate results
+ * 
+ * @param options - Search configuration options
+ * @param options.query - The search query string
+ * @param options.limit - Maximum number of results to return (default: 50)
+ * @param options.engines - Array of engines to use, or ['all'] for all available
+ * @param options.sources - Specific domains to search within
+ * @returns Promise resolving to deduplicated search results
+ * 
+ * @example
+ * ```typescript
+ * // Search all engines
+ * const results = await search({ query: 'AI recruiting tools' });
+ * 
+ * // Search specific engines
+ * const results = await search({ 
+ *   query: 'AI recruiting', 
+ *   engines: ['google', 'devto'],
+ *   limit: 20 
+ * });
+ * 
+ * // Search specific sites
+ * const results = await search({ 
+ *   query: 'recruiting', 
+ *   sources: ['techcrunch.com', 'dev.to'] 
+ * });
+ * ```
  */
 export async function search(options: UnifiedSearchOptions): Promise<SearchResult[]> {
   const {

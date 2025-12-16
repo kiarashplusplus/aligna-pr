@@ -193,22 +193,32 @@ export class ProspectDatabase {
   }
 
   /**
-   * Save multiple prospects
+   * Save multiple prospects with partial success support
+   * @returns Object with counts of successful and failed saves
    */
-  saveProspects(prospects: Prospect[]): void {
+  saveProspects(prospects: Prospect[]): { saved: number; failed: number; errors: string[] } {
     if (!this.db) throw new Error('Database not initialized');
+
+    const result = { saved: 0, failed: 0, errors: [] as string[] };
 
     this.db.run('BEGIN TRANSACTION');
     try {
       for (const prospect of prospects) {
-        this.saveProspect(prospect);
+        try {
+          this.saveProspect(prospect);
+          result.saved++;
+        } catch (err) {
+          result.failed++;
+          result.errors.push(`Failed to save ${prospect.article.url}: ${err instanceof Error ? err.message : 'Unknown error'}`);
+        }
       }
       this.db.run('COMMIT');
     } catch (error) {
       this.db.run('ROLLBACK');
-      throw error;
+      result.errors.push(`Transaction failed: ${error instanceof Error ? error.message : 'Unknown error'}`);
     }
     this.save();
+    return result;
   }
 
   /**
@@ -235,7 +245,12 @@ export class ProspectDatabase {
       params.push(options.priority);
     }
 
-    sql += ` ORDER BY ${options.orderBy || 'score'} DESC`;
+    // Validate orderBy to prevent SQL injection
+    const allowedOrderBy = ['score', 'created_at'];
+    const orderBy = allowedOrderBy.includes(options.orderBy || 'score') 
+      ? (options.orderBy || 'score') 
+      : 'score';
+    sql += ` ORDER BY ${orderBy} DESC`;
 
     if (options.limit) {
       sql += ' LIMIT ?';
