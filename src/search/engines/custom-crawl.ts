@@ -1,143 +1,26 @@
 /**
  * Custom crawl engine for direct site searches
- * Uses DuckDuckGo HTML results and direct site crawling
+ * Provides site-specific search and aggregation across multiple sources
+ * 
+ * Note: For dedicated search engines (DuckDuckGo, dev.to, HackerNews, Medium),
+ * use the specific engine modules in ./engines/ for more features.
+ * This module is for custom site searches and aggregation.
  */
 
-import { load } from 'cheerio';
-import { scraper } from '../scraper';
-import { SearchResult, SearchOptions } from '../../types';
+import { duckduckgoSearch } from './duckduckgo';
+import { devtoSearch } from './devto';
+import { hackernewsSearch } from './hackernews';
+import { mediumSearch } from './medium';
+import { SearchResult } from '../../types';
 import { SEARCH_SOURCES } from '../../config';
 import { logger } from '../../utils';
 
 export class CustomCrawlEngine {
   /**
-   * Search DuckDuckGo HTML results (no API needed)
-   */
-  async searchDuckDuckGo(options: SearchOptions): Promise<SearchResult[]> {
-    const { query, limit = 10 } = options;
-    const results: SearchResult[] = [];
-
-    try {
-      const encodedQuery = encodeURIComponent(query);
-      const url = `https://html.duckduckgo.com/html/?q=${encodedQuery}`;
-
-      const html = await scraper.fetch(url, true);
-      const $ = load(html);
-
-      $('.result').each((_, element) => {
-        if (results.length >= limit) return false;
-
-        const titleEl = $(element).find('.result__title a');
-        const snippetEl = $(element).find('.result__snippet');
-
-        const href = titleEl.attr('href');
-        const title = titleEl.text().trim();
-        const snippet = snippetEl.text().trim();
-
-        if (href && title) {
-          // DuckDuckGo wraps URLs, extract actual URL
-          const urlMatch = href.match(/uddg=([^&]+)/);
-          const actualUrl = urlMatch ? decodeURIComponent(urlMatch[1]) : href;
-
-          results.push({
-            title,
-            url: actualUrl,
-            snippet,
-            source: 'duckduckgo',
-          });
-        }
-      });
-    } catch (error) {
-      logger.error('DuckDuckGo search error:', error);
-    }
-
-    return results;
-  }
-
-  /**
-   * Search dev.to articles
-   */
-  async searchDevTo(query: string, limit = 10): Promise<SearchResult[]> {
-    const results: SearchResult[] = [];
-
-    try {
-      const encodedQuery = encodeURIComponent(query);
-      const url = `https://dev.to/search?q=${encodedQuery}`;
-
-      const html = await scraper.fetch(url);
-      const $ = load(html);
-
-      $('article.crayons-story').each((_, element) => {
-        if (results.length >= limit) return false;
-
-        const titleEl = $(element).find('h2 a, h3 a').first();
-        const href = titleEl.attr('href');
-        const title = titleEl.text().trim();
-
-        if (href && title) {
-          results.push({
-            title,
-            url: href.startsWith('http') ? href : `https://dev.to${href}`,
-            snippet: $(element).find('.crayons-story__tags, .crayons-story__indention p').text().trim(),
-            source: 'dev.to',
-          });
-        }
-      });
-    } catch (error) {
-      logger.error('dev.to search error:', error);
-    }
-
-    return results;
-  }
-
-  /**
-   * Search Medium articles (via DuckDuckGo)
-   */
-  async searchMedium(query: string, limit = 10): Promise<SearchResult[]> {
-    return this.searchDuckDuckGo({
-      query: `site:medium.com ${query}`,
-      limit,
-    });
-  }
-
-  /**
-   * Search Hacker News (via Algolia API)
-   */
-  async searchHackerNews(query: string, limit = 10): Promise<SearchResult[]> {
-    const results: SearchResult[] = [];
-
-    try {
-      const encodedQuery = encodeURIComponent(query);
-      const url = `https://hn.algolia.com/api/v1/search?query=${encodedQuery}&tags=story&hitsPerPage=${limit}`;
-
-      const response = await scraper.fetch(url, true);
-      const data = JSON.parse(response);
-
-      for (const hit of data.hits || []) {
-        if (hit.url) {
-          results.push({
-            title: hit.title || '',
-            url: hit.url,
-            snippet: `Points: ${hit.points || 0}, Comments: ${hit.num_comments || 0}`,
-            source: 'hackernews',
-          });
-        }
-      }
-    } catch (error) {
-      logger.error('Hacker News search error:', error);
-    }
-
-    return results;
-  }
-
-  /**
-   * Search specific site via DuckDuckGo
+   * Search specific site via DuckDuckGo site: operator
    */
   async searchSite(site: string, query: string, limit = 10): Promise<SearchResult[]> {
-    return this.searchDuckDuckGo({
-      query: `site:${site} ${query}`,
-      limit,
-    });
+    return duckduckgoSearch.searchSite(site, query, limit);
   }
 
   /**
@@ -145,16 +28,48 @@ export class CustomCrawlEngine {
    */
   async searchTechBlogs(query: string, limitPerSource = 5): Promise<SearchResult[]> {
     const results: SearchResult[] = [];
+    const seenUrls = new Set<string>();
 
-    // Search dev.to directly
-    const devToResults = await this.searchDevTo(query, limitPerSource);
-    results.push(...devToResults);
+    // Search dev.to using dedicated engine
+    try {
+      const devToResults = await devtoSearch.search({ query, limit: limitPerSource });
+      for (const r of devToResults) {
+        if (!seenUrls.has(r.url)) {
+          seenUrls.add(r.url);
+          results.push(r);
+        }
+      }
+    } catch (error) {
+      logger.error('Error searching dev.to:', error);
+    }
+
+    // Search Medium using dedicated engine
+    try {
+      const mediumResults = await mediumSearch.search({ query, limit: limitPerSource });
+      for (const r of mediumResults) {
+        if (!seenUrls.has(r.url)) {
+          seenUrls.add(r.url);
+          results.push(r);
+        }
+      }
+    } catch (error) {
+      logger.error('Error searching Medium:', error);
+    }
 
     // Search other sites via DuckDuckGo
-    for (const site of SEARCH_SOURCES.techBlogs.filter((s) => s !== 'dev.to')) {
+    const otherSites = SEARCH_SOURCES.techBlogs.filter(
+      (s) => s !== 'dev.to' && s !== 'medium.com'
+    );
+    
+    for (const site of otherSites) {
       try {
         const siteResults = await this.searchSite(site, query, limitPerSource);
-        results.push(...siteResults);
+        for (const r of siteResults) {
+          if (!seenUrls.has(r.url)) {
+            seenUrls.add(r.url);
+            results.push(r);
+          }
+        }
       } catch (error) {
         logger.error(`Error searching ${site}:`, error);
       }
@@ -168,11 +83,17 @@ export class CustomCrawlEngine {
    */
   async searchHRPublications(query: string, limitPerSource = 5): Promise<SearchResult[]> {
     const results: SearchResult[] = [];
+    const seenUrls = new Set<string>();
 
     for (const site of SEARCH_SOURCES.hrPublications) {
       try {
         const siteResults = await this.searchSite(site, query, limitPerSource);
-        results.push(...siteResults);
+        for (const r of siteResults) {
+          if (!seenUrls.has(r.url)) {
+            seenUrls.add(r.url);
+            results.push(r);
+          }
+        }
       } catch (error) {
         logger.error(`Error searching ${site}:`, error);
       }
@@ -182,19 +103,125 @@ export class CustomCrawlEngine {
   }
 
   /**
-   * Search comparison/review sites
+   * Search comparison/review sites (G2, Capterra, etc.)
    */
   async searchComparisonSites(query: string, limitPerSource = 5): Promise<SearchResult[]> {
     const results: SearchResult[] = [];
+    const seenUrls = new Set<string>();
 
     for (const site of SEARCH_SOURCES.comparison) {
       try {
         const siteResults = await this.searchSite(site, query, limitPerSource);
-        results.push(...siteResults);
+        for (const r of siteResults) {
+          if (!seenUrls.has(r.url)) {
+            seenUrls.add(r.url);
+            results.push(r);
+          }
+        }
       } catch (error) {
         logger.error(`Error searching ${site}:`, error);
       }
     }
+
+    return results;
+  }
+
+  /**
+   * Search VC and startup blogs
+   */
+  async searchVCStartupBlogs(query: string, limitPerSource = 5): Promise<SearchResult[]> {
+    const results: SearchResult[] = [];
+    const seenUrls = new Set<string>();
+
+    for (const site of SEARCH_SOURCES.vcStartup) {
+      try {
+        const siteResults = await this.searchSite(site, query, limitPerSource);
+        for (const r of siteResults) {
+          if (!seenUrls.has(r.url)) {
+            seenUrls.add(r.url);
+            results.push(r);
+          }
+        }
+      } catch (error) {
+        logger.error(`Error searching ${site}:`, error);
+      }
+    }
+
+    return results;
+  }
+
+  /**
+   * Search community sites (Reddit, HN, Indie Hackers)
+   */
+  async searchCommunities(query: string, limitPerSource = 5): Promise<SearchResult[]> {
+    const results: SearchResult[] = [];
+    const seenUrls = new Set<string>();
+
+    // Use dedicated HN engine
+    try {
+      const hnResults = await hackernewsSearch.search({ query, limit: limitPerSource });
+      for (const r of hnResults) {
+        if (!seenUrls.has(r.url)) {
+          seenUrls.add(r.url);
+          results.push(r);
+        }
+      }
+    } catch (error) {
+      logger.error('Error searching Hacker News:', error);
+    }
+
+    // Search other community sites via DuckDuckGo
+    const otherCommunities = SEARCH_SOURCES.communities.filter(
+      (s) => s !== 'news.ycombinator.com'
+    );
+
+    for (const site of otherCommunities) {
+      try {
+        const siteResults = await this.searchSite(site, query, limitPerSource);
+        for (const r of siteResults) {
+          if (!seenUrls.has(r.url)) {
+            seenUrls.add(r.url);
+            results.push(r);
+          }
+        }
+      } catch (error) {
+        logger.error(`Error searching ${site}:`, error);
+      }
+    }
+
+    return results;
+  }
+
+  /**
+   * Comprehensive search across all source categories
+   */
+  async searchAllSources(query: string, limitPerCategory = 10): Promise<SearchResult[]> {
+    const results: SearchResult[] = [];
+    const seenUrls = new Set<string>();
+
+    const addResults = (newResults: SearchResult[]) => {
+      for (const r of newResults) {
+        if (!seenUrls.has(r.url)) {
+          seenUrls.add(r.url);
+          results.push(r);
+        }
+      }
+    };
+
+    // Search all categories in parallel
+    const [techBlogs, hrPubs, comparison, vcStartup, communities] = await Promise.allSettled([
+      this.searchTechBlogs(query, Math.ceil(limitPerCategory / 3)),
+      this.searchHRPublications(query, Math.ceil(limitPerCategory / 3)),
+      this.searchComparisonSites(query, Math.ceil(limitPerCategory / 3)),
+      this.searchVCStartupBlogs(query, Math.ceil(limitPerCategory / 3)),
+      this.searchCommunities(query, Math.ceil(limitPerCategory / 3)),
+    ]);
+
+    if (techBlogs.status === 'fulfilled') addResults(techBlogs.value);
+    if (hrPubs.status === 'fulfilled') addResults(hrPubs.value);
+    if (comparison.status === 'fulfilled') addResults(comparison.value);
+    if (vcStartup.status === 'fulfilled') addResults(vcStartup.value);
+    if (communities.status === 'fulfilled') addResults(communities.value);
 
     return results;
   }

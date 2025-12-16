@@ -29,7 +29,7 @@ program
   .option('-q, --query <query>', 'Single search query')
   .option('-Q, --queries <queries>', 'Comma-separated search queries')
   .option('-c, --category <category>', 'Search category (conversationalAI, candidateScreening, hrTech, remoteWork, emergingTech)')
-  .option('-e, --engines <engines>', 'Comma-separated search engines (google, bing, duckduckgo, devto, hackernews)')
+  .option('-e, --engines <engines>', 'Comma-separated search engines (google, bing, duckduckgo, devto, hackernews, medium)')
   .option('-s, --sources <sources>', 'Comma-separated source domains to search')
   .option('-l, --limit <number>', 'Maximum articles to process', '50')
   .option('-m, --min-score <number>', 'Minimum score to include', '40')
