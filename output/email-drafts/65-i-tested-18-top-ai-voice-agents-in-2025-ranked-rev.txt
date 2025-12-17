@@ -1,0 +1,49 @@
+# Outreach for: I Tested 18+ Top AI Voice Agents in 2025 (Ranked & Reviewed) | Lindy
+# Score: 65 (strong)
+# Author: Unknown Author
+# Contact: contact-form
+# URL: https://www.lindy.ai/blog/ai-voice-agents
+
+---
+
+Subject: Addition to your recruiting tools article
+
+Hi Unknown,
+
+I recently read your article "I Tested 18+ Top AI Voice Agents in 2025 (Ranked & Reviewed) | Lindy" on Lindy Ai and found it really insightful — particularly the insight that how 50%(claimed by dialpad).
+
+This list of recruiting tools doesn't include voice-based AI screeners, which represent the newest generation of candidate assessment technology.
+
+I'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:
+
+• Real-time AI phone conversations (not pre-recorded video responses)
+• Built on LiveKit + Azure OpenAI for voice-first candidate experience
+• Eliminates scheduling complexity - candidates just call a number
+• Dual-sided platform: candidates AND employers interact via AI voice
+
+Since your article highlights scheduling challenges, Aligna's approach of 'call anytime' might resonate with your audience - no booking required.
+
+Would you consider adding Aligna to your list, or would a separate mention in a relevant section make sense?
+
+I completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.
+
+Best,
+[Your Name]
+Aligna Team
+
+---
+📞 Live demo: https://www.align-a.com
+🔧 Built by MIT alum Kiarash Adl
+
+---
+
+## Score Breakdown:
+• Topical Relevance: 17/30 - Moderate match - discusses recruiting automation or HR tech
+• Article Quality: 19/20 - Excellent quality - comprehensive, product-focused content
+• Updateability: 13/20 - Likely to accept updates - fresh, list-type content
+• Author Credibility: 7/15
+• Competitive Gap: 5/10
+• Reachability: 4/5
+
+## Notes:
+This list of recruiting tools doesn't include voice-based AI screeners, which represent the newest generation of candidate assessment technology.

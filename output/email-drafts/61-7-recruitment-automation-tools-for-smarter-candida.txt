@@ -1,0 +1,53 @@
+# Outreach for: 7 Recruitment Automation Tools for Smarter Candidate Screening | Willo Blog
+# Score: 61 (strong)
+# Author: Unknown Author
+# Contact: contact-form
+# URL: https://www.willo.video/blog/recruitment-automation-tools-for-candidate-screening
+
+---
+
+Subject: Thought on your article about recruiting automation
+
+Hi Unknown,
+
+I recently read your article "7 Recruitment Automation Tools for Smarter Candidate Screening | Willo Blog" on Willo Video and found it really insightful — particularly the insight that how 75% of employers worldwide struggling.
+
+SparkHire mentioned - position Aligna as the phone-first alternative that eliminates video recording anxiety.
+
+This article discusses async video screening but doesn't mention live conversational AI alternatives like Aligna, which eliminates the video recording anxiety many candidates experience.
+
+I'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:
+
+• Real-time AI phone conversations (not pre-recorded video responses)
+• Built on LiveKit + Azure OpenAI for voice-first candidate experience
+• Eliminates scheduling complexity - candidates just call a number
+• Dual-sided platform: candidates AND employers interact via AI voice
+
+For your readers evaluating async video tools, Aligna offers a phone-first alternative that many candidates find less intimidating than recording video responses.
+
+If you update this article in the future, would mentioning voice-first AI screening fit your narrative?
+
+I completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.
+
+Best,
+[Your Name]
+Aligna Team
+
+---
+📞 Live demo: https://www.align-a.com
+🔧 Built by MIT alum Kiarash Adl
+
+---
+
+## Score Breakdown:
+• Topical Relevance: 18/30 - Strong match - covers AI-powered candidate screening
+• Article Quality: 15/20 - High quality - detailed guide or comparison
+• Updateability: 7/20 - Low update likelihood - dated or static content type
+• Author Credibility: 7/15
+• Competitive Gap: 10/10 (mentions competitors but not Aligna!)
+• Reachability: 4/5
+
+## Notes:
+SparkHire mentioned - position Aligna as the phone-first alternative that eliminates video recording anxiety.
+
+This article discusses async video screening but doesn't mention live conversational AI alternatives like Aligna, which eliminates the video recording anxiety many candidates experience.

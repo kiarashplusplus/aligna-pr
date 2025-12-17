@@ -1,0 +1,49 @@
+# Outreach for: 5 Greenhouse Alternatives to Power Modern Hiring Teams
+# Score: 62 (strong)
+# Author: Unknown Author
+# Contact: contact-form
+# URL: https://www.lever.co/greenhouse-alternatives/
+
+---
+
+Subject: New alternative for your recruiting platform comparison
+
+Hi Unknown,
+
+I recently read your article "5 Greenhouse Alternatives to Power Modern Hiring Teams" on Lever and found it really insightful — particularly the balanced analysis that helps readers make informed decisions.
+
+The article discusses scheduling challenges in recruiting but doesn't mention phone-first AI screening that eliminates scheduling entirely - candidates just call a number anytime.
+
+I'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:
+
+• Real-time AI phone conversations (not pre-recorded video responses)
+• Built on LiveKit + Azure OpenAI for voice-first candidate experience
+• Eliminates scheduling complexity - candidates just call a number
+• Dual-sided platform: candidates AND employers interact via AI voice
+
+Since your article highlights scheduling challenges, Aligna's approach of 'call anytime' might resonate with your audience - no booking required.
+
+Would it make sense to add Aligna as an alternative in your comparison, especially in a 'live voice AI' category?
+
+I completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.
+
+Best,
+[Your Name]
+Aligna Team
+
+---
+📞 Live demo: https://www.align-a.com
+🔧 Built by MIT alum Kiarash Adl
+
+---
+
+## Score Breakdown:
+• Topical Relevance: 12/30 - Moderate match - discusses recruiting automation or HR tech
+• Article Quality: 17/20 - High quality - detailed guide or comparison
+• Updateability: 14/20 - Likely to accept updates - fresh, list-type content
+• Author Credibility: 7/15
+• Competitive Gap: 8/10 (mentions competitors but not Aligna!)
+• Reachability: 4/5
+
+## Notes:
+The article discusses scheduling challenges in recruiting but doesn't mention phone-first AI screening that eliminates scheduling entirely - candidates just call a number anytime.

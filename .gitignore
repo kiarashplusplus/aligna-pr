@@ -10,7 +10,6 @@ dist/
 
 # Data and output
 data/
-output/
 *.db
 
 # IDE

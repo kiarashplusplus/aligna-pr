@@ -1,0 +1,49 @@
+# Outreach for: Top 10 Best AI Recruiting Platforms (2025) - Hiring Guide
+# Score: 68 (strong)
+# Author: Unknown Author
+# Contact: contact-form
+# URL: https://www.qureos.com/hiring-guide/best-ai-recruiting-platforms
+
+---
+
+Subject: Addition to your recruiting tools article
+
+Hi Unknown,
+
+I recently read your article "Top 10 Best AI Recruiting Platforms (2025) - Hiring Guide" on Qureos Hiring Guide and found it really insightful — particularly your focus on candidate experience.
+
+This article discusses async video screening but doesn't mention live conversational AI alternatives like Aligna, which eliminates the video recording anxiety many candidates experience. HireVue mentioned - position Aligna as the live conversation alternative to pre-recorded video.
+
+I'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:
+
+• Real-time AI phone conversations (not pre-recorded video responses)
+• Built on LiveKit + Azure OpenAI for voice-first candidate experience
+• Eliminates scheduling complexity - candidates just call a number
+• Dual-sided platform: candidates AND employers interact via AI voice
+
+For your readers evaluating async video tools, Aligna offers a phone-first alternative that many candidates find less intimidating than recording video responses.
+
+Would you consider adding Aligna to your list, or would a separate mention in a relevant section make sense?
+
+I completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.
+
+Best,
+[Your Name]
+Aligna Team
+
+---
+📞 Live demo: https://www.align-a.com
+🔧 Built by MIT alum Kiarash Adl
+
+---
+
+## Score Breakdown:
+• Topical Relevance: 18/30 - Strong match - covers AI-powered candidate screening
+• Article Quality: 16/20 - High quality - detailed guide or comparison
+• Updateability: 13/20 - Likely to accept updates - fresh, list-type content
+• Author Credibility: 7/15
+• Competitive Gap: 10/10 (mentions competitors but not Aligna!)
+• Reachability: 4/5
+
+## Notes:
+This article discusses async video screening but doesn't mention live conversational AI alternatives like Aligna, which eliminates the video recording anxiety many candidates experience. HireVue mentioned - position Aligna as the live conversation alternative to pre-recorded video.

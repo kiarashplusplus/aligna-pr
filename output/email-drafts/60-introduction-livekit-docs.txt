@@ -1,0 +1,49 @@
+# Outreach for: Introduction | LiveKit docs
+# Score: 60 (strong)
+# Author: Unknown Author
+# Contact: contact-form
+# URL: https://docs.livekit.io/agents/
+
+---
+
+Subject: Thought on your article about recruiting automation
+
+Hi Unknown,
+
+I recently read your article "Introduction | LiveKit docs" on LiveKit docs and found it really insightful — especially your thoughtful analysis of AI's role in recruiting.
+
+This technical article could benefit from a real-world case study of LiveKit in production for voice-based recruiting automation.
+
+I'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:
+
+• Real-time AI phone conversations (not pre-recorded video responses)
+• Built on LiveKit + Azure OpenAI for voice-first candidate experience
+• Eliminates scheduling complexity - candidates just call a number
+• Dual-sided platform: candidates AND employers interact via AI voice
+
+For technical recruiting (which your article focuses on), our open-source approach and MIT founder background might add credibility.
+
+Would a reference to Aligna as an example of conversational AI in recruiting be useful for your readers?
+
+I completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.
+
+Best,
+[Your Name]
+Aligna Team
+
+---
+📞 Live demo: https://www.align-a.com
+🔧 Built by MIT alum Kiarash Adl
+
+---
+
+## Score Breakdown:
+• Topical Relevance: 30/30 - Perfect match - explicitly discusses voice/conversational AI in recruiting
+• Article Quality: 12/20 - Good quality - solid content with useful depth
+• Updateability: 2/20 - Unlikely to be updated - old or static content
+• Author Credibility: 7/15
+• Competitive Gap: 5/10
+• Reachability: 4/5
+
+## Notes:
+This technical article could benefit from a real-world case study of LiveKit in production for voice-based recruiting automation.

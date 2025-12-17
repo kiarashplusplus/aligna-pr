@@ -15,6 +15,7 @@ interface RateLimitEntry {
   requestCount: number;
   hourStart: number;
   customDelay?: number;
+  rateLimitRetries?: number;
 }
 
 export class EthicalScraper {
@@ -78,8 +79,11 @@ export class EthicalScraper {
         
         // Handle rate limiting (429)
         if (axiosError.response?.status === 429) {
-          await this.handleRateLimit(domain);
-          return this.fetch(url, skipRobotsCheck, retryCount);
+          const shouldRetry = await this.handleRateLimit(domain);
+          if (shouldRetry) {
+            return this.fetch(url, skipRobotsCheck, retryCount);
+          }
+          throw new Error(`Rate limited by ${domain} - max retries exceeded, skipping`);
         }
         
         // Handle transient network errors with retry
@@ -209,16 +213,33 @@ export class EthicalScraper {
 
   /**
    * Handle rate limit (429) response with exponential backoff
+   * Returns true if should retry, false if max retries exceeded
    */
-  private async handleRateLimit(domain: string): Promise<void> {
-    const entry = this.rateLimits.get(domain);
-    if (entry) {
-      // Exponential backoff: 5s, 10s, 20s, 40s...
-      const backoffMultiplier = Math.min(entry.requestCount, 5);
-      const backoffTime = 5000 * Math.pow(2, backoffMultiplier);
-      logger.warn(`Rate limited by ${domain}. Waiting ${backoffTime / 1000}s before retry...`);
-      await this.sleep(backoffTime);
+  private async handleRateLimit(domain: string): Promise<boolean> {
+    let entry = this.rateLimits.get(domain);
+    if (!entry) {
+      entry = {
+        lastRequest: Date.now(),
+        requestCount: 1,
+        hourStart: Date.now(),
+        rateLimitRetries: 0,
+      };
+      this.rateLimits.set(domain, entry);
     }
+    
+    entry.rateLimitRetries = (entry.rateLimitRetries || 0) + 1;
+    const MAX_RATE_LIMIT_RETRIES = 3;
+    
+    if (entry.rateLimitRetries > MAX_RATE_LIMIT_RETRIES) {
+      logger.warn(`Max rate limit retries (${MAX_RATE_LIMIT_RETRIES}) exceeded for ${domain}, skipping...`);
+      return false;
+    }
+    
+    // Exponential backoff: 10s, 20s, 40s
+    const backoffTime = 10000 * Math.pow(2, entry.rateLimitRetries - 1);
+    logger.warn(`Rate limited by ${domain}. Waiting ${backoffTime / 1000}s before retry (attempt ${entry.rateLimitRetries}/${MAX_RATE_LIMIT_RETRIES})...`);
+    await this.sleep(backoffTime);
+    return true;
   }
 
   /**

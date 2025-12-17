@@ -1,0 +1,53 @@
+# Outreach for: 7 Best HireVue Alternatives Ranked in 2025 | Willo Blog
+# Score: 75 (strong)
+# Author: Unknown Author
+# Contact: contact-form
+# URL: https://www.willo.video/blog/hirevue-alternatives
+
+---
+
+Subject: Addition to your recruiting tools article
+
+Hi Unknown,
+
+I recently read your article "7 Best HireVue Alternatives Ranked in 2025 | Willo Blog" on Willo Video and found it really insightful — particularly the insight that how 65% of hr professionals use ai in thei.
+
+Article notes HireVue cost concerns - Aligna offers startup-friendly pricing with transparent costs.
+
+This article discusses async video screening but doesn't mention live conversational AI alternatives like Aligna, which eliminates the video recording anxiety many candidates experience.
+
+I'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:
+
+• Real-time AI phone conversations (not pre-recorded video responses)
+• Built on LiveKit + Azure OpenAI for voice-first candidate experience
+• Eliminates scheduling complexity - candidates just call a number
+• Dual-sided platform: candidates AND employers interact via AI voice
+
+For your readers evaluating async video tools, Aligna offers a phone-first alternative that many candidates find less intimidating than recording video responses.
+
+Would you consider adding Aligna to your list, or would a separate mention in a relevant section make sense?
+
+I completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.
+
+Best,
+[Your Name]
+Aligna Team
+
+---
+📞 Live demo: https://www.align-a.com
+🔧 Built by MIT alum Kiarash Adl
+
+---
+
+## Score Breakdown:
+• Topical Relevance: 22/30 - Strong match - covers AI-powered candidate screening
+• Article Quality: 19/20 - Excellent quality - comprehensive, product-focused content
+• Updateability: 13/20 - Likely to accept updates - fresh, list-type content
+• Author Credibility: 7/15
+• Competitive Gap: 10/10 (mentions competitors but not Aligna!)
+• Reachability: 4/5
+
+## Notes:
+Article notes HireVue cost concerns - Aligna offers startup-friendly pricing with transparent costs.
+
+This article discusses async video screening but doesn't mention live conversational AI alternatives like Aligna, which eliminates the video recording anxiety many candidates experience.

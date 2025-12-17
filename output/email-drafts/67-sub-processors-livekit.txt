@@ -1,0 +1,49 @@
+# Outreach for: Sub-processors | LiveKit
+# Score: 67 (strong)
+# Author: Unknown Author
+# Contact: contact-form
+# URL: https://livekit.io/legal/sub-processors
+
+---
+
+Subject: Addition to your recruiting tools article
+
+Hi Unknown,
+
+I recently read your article "Sub-processors | LiveKit" on Livekit and found it really insightful — especially the structured comparison format that makes it easy for readers to evaluate options.
+
+This list of recruiting tools doesn't include voice-based AI screeners, which represent the newest generation of candidate assessment technology.
+
+I'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:
+
+• Real-time AI phone conversations (not pre-recorded video responses)
+• Built on LiveKit + Azure OpenAI for voice-first candidate experience
+• Eliminates scheduling complexity - candidates just call a number
+• Dual-sided platform: candidates AND employers interact via AI voice
+
+Given your focus on recruiting innovation, this might be a useful addition for your readers exploring modern screening approaches.
+
+Would you consider adding Aligna to your list, or would a separate mention in a relevant section make sense?
+
+I completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.
+
+Best,
+[Your Name]
+Aligna Team
+
+---
+📞 Live demo: https://www.align-a.com
+🔧 Built by MIT alum Kiarash Adl
+
+---
+
+## Score Breakdown:
+• Topical Relevance: 30/30 - Perfect match - explicitly discusses voice/conversational AI in recruiting
+• Article Quality: 13/20 - Good quality - solid content with useful depth
+• Updateability: 8/20 - Moderate update potential - content type supports updates
+• Author Credibility: 7/15
+• Competitive Gap: 5/10
+• Reachability: 4/5
+
+## Notes:
+This list of recruiting tools doesn't include voice-based AI screeners, which represent the newest generation of candidate assessment technology.

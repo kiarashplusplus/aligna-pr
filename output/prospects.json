@@ -1,0 +1,1397 @@
+{
+  "metadata": {
+    "searchDate": "2025-12-17T12:29:46.375Z",
+    "queries": [
+      "Azure OpenAI applications in HR",
+      "GPT-5 use cases recruiting",
+      "GPT-4 recruiting",
+      "AI voice agents for business",
+      "WebRTC recruiting applications"
+    ],
+    "totalArticlesFound": 62,
+    "totalArticlesScored": 26,
+    "averageScore": 48.2,
+    "highPriorityCount": 3,
+    "processingTimeMs": 360683
+  },
+  "prospects": [
+    {
+      "id": "baec805b-44bc-48d4-b65d-16a9e1d1d2ab",
+      "article": {
+        "title": "How to Use ChatGPT in Recruiting (2025 Expert Guide)",
+        "url": "https://www.herohunt.ai/blog/how-to-use-chatgpt-in-recruiting-2025-expert-guide",
+        "publicationName": "Herohunt Ai",
+        "publishDate": null,
+        "lastUpdated": null,
+        "fullText": "In today’s talent acquisition landscape, AI tools like ChatGPT are transforming how recruiters source, engage, and hire candidates. This expert guide dives deep into practical applications, best practices, platforms, and future trends for using ChatGPT in recruiting.ContentsHigh-Level Overview: AI in Recruiting and ChatGPT’s RoleChatGPT Use Cases in RecruitmentSourcing Candidates with AIResume Screening and ShortlistingPersonalized Outreach and MessagingCandidate Engagement and ChatbotsInternal ...",
+        "excerpt": "In today’s talent acquisition landscape, AI tools like ChatGPT are transforming how recruiters source, engage, and hire candidates. This expert guide dives deep into practical applications, best pr...",
+        "wordCount": 18397,
+        "detectedTopics": [
+          "voice-ai",
+          "candidate-screening",
+          "hr-tech",
+          "interview-automation",
+          "startup",
+          "remote-work"
+        ],
+        "contentType": "guide",
+        "mentionsProducts": true,
+        "mentionsCompetitors": [
+          "hirevue"
+        ],
+        "domain": "www.herohunt.ai"
+      },
+      "author": {
+        "name": "Unknown Author",
+        "isFreelance": false,
+        "isEditor": false,
+        "worksForPublication": "www.herohunt.ai",
+        "bestContactMethod": "contact-form",
+        "contactNotes": "LinkedIn profile found. Contact form available",
+        "linkedInUrl": "https://www.linkedin.com/in/yumaheymans/",
+        "contactFormUrl": "https://www.herohunt.ai/about"
+      },
+      "score": 66,
+      "scoreBreakdown": {
+        "topicalRelevance": 18,
+        "articleQuality": 20,
+        "updateability": 7,
+        "authorCredibility": 7,
+        "competitiveGap": 10,
+        "reachability": 4
+      },
+      "priority": "strong",
+      "outreach": {
+        "score": 66,
+        "priority": "strong",
+        "opportunityReason": "Strong prospect worth prioritizing. Comprehensive guide could benefit from voice AI perspective. Mentions 1 competitor(s) but not Aligna - clear gap opportunity. Already discusses voice AI - perfect fit for Aligna mention. Focuses on candidate screening - core Aligna use case.",
+        "angle": "This article discusses async video screening but doesn't mention live conversational AI alternatives like Aligna, which eliminates the video recording anxiety many candidates experience. Article notes HireVue cost concerns - Aligna offers competitive pricing for startups.",
+        "suggestedSubject": "Voice AI perspective for your recruiting guide",
+        "suggestedEmailDraft": "Subject: Voice AI perspective for your recruiting guide\n\nHi Unknown,\n\nI recently read your article \"How to Use ChatGPT in Recruiting (2025 Expert Guide)\" on Herohunt Ai and found it really insightful — particularly the insight that how 26% in 2023 to 53% in 2024 (technode.\n\nThis article discusses async video screening but doesn't mention live conversational AI alternatives like Aligna, which eliminates the video recording anxiety many candidates experience. Article notes HireVue cost concerns - Aligna offers competitive pricing for startups.\n\nI'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:\n\n• Real-time AI phone conversations (not pre-recorded video responses)\n• Built on LiveKit + Azure OpenAI for voice-first candidate experience\n• Eliminates scheduling complexity - candidates just call a number\n• Dual-sided platform: candidates AND employers interact via AI voice\n\nFor your readers evaluating async video tools, Aligna offers a phone-first alternative that many candidates find less intimidating than recording video responses.\n\nWould a reference to Aligna as an example of conversational AI in recruiting be useful for your readers?\n\nI completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.\n\nBest,\n[Your Name]\nAligna Team\n\n---\n📞 Live demo: https://www.align-a.com\n🔧 Built by MIT alum Kiarash Adl",
+        "contactMethod": "contact-form",
+        "estimatedResponseRate": "medium"
+      },
+      "createdAt": "2025-12-17T12:26:42.859Z",
+      "updatedAt": "2025-12-17T12:26:42.859Z"
+    },
+    {
+      "id": "8e39cef9-ae56-4fff-97f8-2f5ce3831155",
+      "article": {
+        "title": "I Tested 18+ Top AI Voice Agents in 2025 (Ranked & Reviewed) | Lindy",
+        "url": "https://www.lindy.ai/blog/ai-voice-agents",
+        "publicationName": "Lindy Ai",
+        "publishDate": null,
+        "lastUpdated": "2025-11-27T00:00:00.000Z",
+        "fullText": "After testing 18+ AI voice agents across sales and support workflows, here are my top 10 picks that sound natural, integrate easily, and deliver results you can track.10 Best AI voice agents in 2025: TL;DRLindy: Best AI voice agent overall for automation, sales, and supportVapi: Best for omnichannel voice automationElevenLabs: Best for realistic and expressive AI voicesWhisper by OpenAI: Best open-source speech recognition modelBland AI: Best for creating customizable AI voice agents via APISynt...",
+        "excerpt": "After testing 18+ AI voice agents across sales and support workflows, here are my top 10 picks that sound natural, integrate easily, and deliver results you can track.10 Best AI voice agents in 202...",
+        "wordCount": 3979,
+        "detectedTopics": [
+          "voice-ai",
+          "hr-tech"
+        ],
+        "contentType": "listicle",
+        "mentionsProducts": true,
+        "mentionsCompetitors": [],
+        "domain": "www.lindy.ai"
+      },
+      "author": {
+        "name": "Unknown Author",
+        "isFreelance": false,
+        "isEditor": false,
+        "worksForPublication": "www.lindy.ai",
+        "bestContactMethod": "contact-form",
+        "contactNotes": "Twitter: @getlindy. Contact form available",
+        "twitterHandle": "getlindy",
+        "contactFormUrl": "https://www.lindy.ai/contact-sales"
+      },
+      "score": 65,
+      "scoreBreakdown": {
+        "topicalRelevance": 17,
+        "articleQuality": 19,
+        "updateability": 13,
+        "authorCredibility": 7,
+        "competitiveGap": 5,
+        "reachability": 4
+      },
+      "priority": "strong",
+      "outreach": {
+        "score": 65,
+        "priority": "strong",
+        "opportunityReason": "Strong prospect worth prioritizing. Listicle format makes adding a new tool straightforward. Already discusses voice AI - perfect fit for Aligna mention.",
+        "angle": "This list of recruiting tools doesn't include voice-based AI screeners, which represent the newest generation of candidate assessment technology.",
+        "suggestedSubject": "Addition to your recruiting tools article",
+        "suggestedEmailDraft": "Subject: Addition to your recruiting tools article\n\nHi Unknown,\n\nI recently read your article \"I Tested 18+ Top AI Voice Agents in 2025 (Ranked & Reviewed) | Lindy\" on Lindy Ai and found it really insightful — particularly the insight that how 50%(claimed by dialpad).\n\nThis list of recruiting tools doesn't include voice-based AI screeners, which represent the newest generation of candidate assessment technology.\n\nI'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:\n\n• Real-time AI phone conversations (not pre-recorded video responses)\n• Built on LiveKit + Azure OpenAI for voice-first candidate experience\n• Eliminates scheduling complexity - candidates just call a number\n• Dual-sided platform: candidates AND employers interact via AI voice\n\nSince your article highlights scheduling challenges, Aligna's approach of 'call anytime' might resonate with your audience - no booking required.\n\nWould you consider adding Aligna to your list, or would a separate mention in a relevant section make sense?\n\nI completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.\n\nBest,\n[Your Name]\nAligna Team\n\n---\n📞 Live demo: https://www.align-a.com\n🔧 Built by MIT alum Kiarash Adl",
+        "contactMethod": "contact-form",
+        "estimatedResponseRate": "medium"
+      },
+      "createdAt": "2025-12-17T12:28:49.651Z",
+      "updatedAt": "2025-12-17T12:28:49.651Z"
+    },
+    {
+      "id": "00fde38b-6066-4b84-839a-1a32c3a689d8",
+      "article": {
+        "title": "How to impress WebRTC recruiters",
+        "url": "https://bloggeek.me/impress-webrtc-recruiters/",
+        "publicationName": "BlogGeek.me",
+        "publishDate": "2025-09-01T09:30:00.000Z",
+        "lastUpdated": "2025-12-15T12:24:46.000Z",
+        "fullText": "\nLearn what specific WebRTC skills are recruiters looking for in their candidates for companies developing WebRTC applications.\n\n\n\n\n\n\n\nIf we dumb it down, I consult companies developing communication services and offer training courses for employees to upskill them in WebRTC. A recent post on reddit caught my eyes, and prodding me to write this article:\n\n\n\nTable of contentsWhy become a WebRTC expertWhat recruiters want wrt WebRTC4 domains of WebRTC expertise1️⃣ WebRTC signaling (and APIs)2️⃣ Cli...",
+        "excerpt": "Learn what specific WebRTC skills are recruiters looking for in their candidates for companies developing WebRTC applications. If we dumb it down, I consult companies developing communication servi...",
+        "wordCount": 2085,
+        "detectedTopics": [
+          "voice-ai",
+          "startup"
+        ],
+        "contentType": "guide",
+        "mentionsProducts": true,
+        "mentionsCompetitors": [],
+        "domain": "bloggeek.me"
+      },
+      "author": {
+        "name": "Tsahi Levent-Levi",
+        "isFreelance": false,
+        "isEditor": false,
+        "worksForPublication": "bloggeek.me",
+        "bestContactMethod": "contact-form",
+        "contactNotes": "LinkedIn profile found. Twitter: @tsahil. Contact form available",
+        "linkedInUrl": "https://il.linkedin.com/in/tsahi/",
+        "twitterHandle": "tsahil",
+        "contactFormUrl": "https://bloggeek.me/about/"
+      },
+      "score": 62,
+      "scoreBreakdown": {
+        "topicalRelevance": 15,
+        "articleQuality": 19,
+        "updateability": 12,
+        "authorCredibility": 7,
+        "competitiveGap": 5,
+        "reachability": 4
+      },
+      "priority": "strong",
+      "outreach": {
+        "score": 62,
+        "priority": "strong",
+        "opportunityReason": "Strong prospect worth prioritizing. Comprehensive guide could benefit from voice AI perspective. Already discusses voice AI - perfect fit for Aligna mention.",
+        "angle": "This technical article could benefit from a real-world case study of LiveKit in production for voice-based recruiting automation.",
+        "suggestedSubject": "Voice AI perspective for your recruiting guide",
+        "suggestedEmailDraft": "Subject: Voice AI perspective for your recruiting guide\n\nHi Tsahi,\n\nI recently read your article \"How to impress WebRTC recruiters\" on BlogGeek.me and found it really insightful — especially the practical, actionable framework you've outlined.\n\nThis technical article could benefit from a real-world case study of LiveKit in production for voice-based recruiting automation.\n\nI'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:\n\n• Real-time AI phone conversations (not pre-recorded video responses)\n• Built on LiveKit + Azure OpenAI for voice-first candidate experience\n• Eliminates scheduling complexity - candidates just call a number\n• Dual-sided platform: candidates AND employers interact via AI voice\n\nFor technical recruiting (which your article focuses on), our open-source approach and MIT founder background might add credibility.\n\nIf you update this article in the future, would mentioning voice-first AI screening fit your narrative?\n\nI completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.\n\nBest,\n[Your Name]\nAligna Team\n\n---\n📞 Live demo: https://www.align-a.com\n🔧 Built by MIT alum Kiarash Adl",
+        "contactMethod": "contact-form",
+        "estimatedResponseRate": "low"
+      },
+      "createdAt": "2025-12-17T12:29:42.270Z",
+      "updatedAt": "2025-12-17T12:29:42.270Z"
+    },
+    {
+      "id": "fe9bd7dd-3794-4544-8d65-e2088969cf17",
+      "article": {
+        "title": "AI Voice Agents: 2025 Update | Andreessen Horowitz",
+        "url": "https://a16z.com/ai-voice-agents-2025-update/",
+        "publicationName": "Andreessen Horowitz",
+        "publishDate": "2025-01-29T15:50:54.000Z",
+        "lastUpdated": "2025-03-07T21:52:04.000Z",
+        "fullText": "\n                        \n                        \n                        \n                                                        View this report on Gamma.\nVoice is one of the most powerful unlocks for AI application companies. It is the most frequent (and most information-dense) form of human communication, made “programmable” for the first time due to AI.\n\nFor enterprises, AI directly replaces human labor with technology. It’s cheaper, faster, more reliable — and often outperforms humans. V...",
+        "excerpt": "View this report on Gamma. Voice is one of the most powerful unlocks for AI application companies. It is the most frequent (and most information-dense) form of human communication, made “programmab...",
+        "wordCount": 1533,
+        "detectedTopics": [
+          "voice-ai",
+          "candidate-screening",
+          "interview-automation",
+          "startup"
+        ],
+        "contentType": "opinion",
+        "mentionsProducts": true,
+        "mentionsCompetitors": [],
+        "domain": "a16z.com"
+      },
+      "author": {
+        "name": "Olivia Moore",
+        "isFreelance": false,
+        "isEditor": false,
+        "worksForPublication": "a16z.com",
+        "bestContactMethod": "contact-form",
+        "contactNotes": "Twitter: @a16z. Contact form available",
+        "twitterHandle": "a16z",
+        "contactFormUrl": "https://a16z.com/about/"
+      },
+      "score": 53,
+      "scoreBreakdown": {
+        "topicalRelevance": 18,
+        "articleQuality": 14,
+        "updateability": 5,
+        "authorCredibility": 7,
+        "competitiveGap": 5,
+        "reachability": 4
+      },
+      "priority": "moderate",
+      "outreach": {
+        "score": 53,
+        "priority": "moderate",
+        "opportunityReason": "Already discusses voice AI - perfect fit for Aligna mention. Focuses on candidate screening - core Aligna use case.",
+        "angle": "This article focuses on candidate experience but doesn't mention how live AI phone conversations can feel more natural than recording video responses to a screen.",
+        "suggestedSubject": "Thought on your article about recruiting automation",
+        "suggestedEmailDraft": "Subject: Thought on your article about recruiting automation\n\nHi Olivia,\n\nI recently read your article \"AI Voice Agents: 2025 Update | Andreessen Horowitz\" on Andreessen Horowitz and found it really insightful — particularly the insight that how 60% for input (to $40/1m tokens) and 8.\n\nThis article focuses on candidate experience but doesn't mention how live AI phone conversations can feel more natural than recording video responses to a screen.\n\nI'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:\n\n• Real-time AI phone conversations (not pre-recorded video responses)\n• Built on LiveKit + Azure OpenAI for voice-first candidate experience\n• Eliminates scheduling complexity - candidates just call a number\n• Dual-sided platform: candidates AND employers interact via AI voice\n\nFor technical recruiting (which your article focuses on), our open-source approach and MIT founder background might add credibility.\n\nIf you update this article in the future, would mentioning voice-first AI screening fit your narrative?\n\nI completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.\n\nBest,\n[Your Name]\nAligna Team\n\n---\n📞 Live demo: https://www.align-a.com\n🔧 Built by MIT alum Kiarash Adl",
+        "contactMethod": "contact-form",
+        "estimatedResponseRate": "low"
+      },
+      "createdAt": "2025-12-17T12:28:48.572Z",
+      "updatedAt": "2025-12-17T12:28:48.572Z"
+    },
+    {
+      "id": "3c21d445-fb17-455f-a317-e9a766b44163",
+      "article": {
+        "title": "Introducing GPT-5.2",
+        "url": "https://openai.com/index/introducing-gpt-5-2/",
+        "publicationName": "Openai",
+        "publishDate": "2025-12-16T00:00:00.000Z",
+        "lastUpdated": null,
+        "fullText": "We are introducing GPT‑5.2, the most capable model series yet for professional knowledge work.Already, the average ChatGPT Enterprise user says⁠ AI saves them 40–60 minutes a day, and heavy users say it saves them more than 10 hours a week. We designed GPT‑5.2 to unlock even more economic value for people; it’s better at creating spreadsheets, building presentations, writing code, perceiving images, understanding long contexts, using tools, and handling complex, multi-step projects.GPT‑5.2 sets ...",
+        "excerpt": "We are introducing GPT‑5.2, the most capable model series yet for professional knowledge work.Already, the average ChatGPT Enterprise user says⁠ AI saves them 40–60 minutes a day, and heavy users s...",
+        "wordCount": 2170,
+        "detectedTopics": [
+          "candidate-screening",
+          "hr-tech"
+        ],
+        "contentType": "opinion",
+        "mentionsProducts": true,
+        "mentionsCompetitors": [],
+        "domain": "openai.com"
+      },
+      "author": {
+        "name": "Unknown Author",
+        "isFreelance": false,
+        "isEditor": false,
+        "worksForPublication": "openai.com",
+        "bestContactMethod": "contact-form",
+        "contactNotes": "Twitter: @home. Contact form available",
+        "twitterHandle": "home",
+        "githubUsername": "openai",
+        "contactFormUrl": "https://openai.com/about/"
+      },
+      "score": 52,
+      "scoreBreakdown": {
+        "topicalRelevance": 14,
+        "articleQuality": 15,
+        "updateability": 7,
+        "authorCredibility": 7,
+        "competitiveGap": 5,
+        "reachability": 4
+      },
+      "priority": "moderate",
+      "outreach": {
+        "score": 52,
+        "priority": "moderate",
+        "opportunityReason": "Focuses on candidate screening - core Aligna use case.",
+        "angle": "This article about recruiting innovation could reference Aligna as an example of MIT-founded technical recruiting solutions.",
+        "suggestedSubject": "Thought on your article about recruiting automation",
+        "suggestedEmailDraft": "Subject: Thought on your article about recruiting automation\n\nHi Unknown,\n\nI recently read your article \"Introducing GPT-5.2\" on Openai and found it really insightful — particularly the insight that how 9% of comparisons on gdpval knowledge.\n\nThis article about recruiting innovation could reference Aligna as an example of MIT-founded technical recruiting solutions.\n\nI'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:\n\n• Real-time AI phone conversations (not pre-recorded video responses)\n• Built on LiveKit + Azure OpenAI for voice-first candidate experience\n• Eliminates scheduling complexity - candidates just call a number\n• Dual-sided platform: candidates AND employers interact via AI voice\n\nSince your article highlights scheduling challenges, Aligna's approach of 'call anytime' might resonate with your audience - no booking required.\n\nWould a reference to Aligna as an example of conversational AI in recruiting be useful for your readers?\n\nI completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.\n\nBest,\n[Your Name]\nAligna Team\n\n---\n📞 Live demo: https://www.align-a.com\n🔧 Built by MIT alum Kiarash Adl",
+        "contactMethod": "contact-form",
+        "estimatedResponseRate": "low"
+      },
+      "createdAt": "2025-12-17T12:27:22.551Z",
+      "updatedAt": "2025-12-17T12:27:22.551Z"
+    },
+    {
+      "id": "ca0e2c6d-6951-4fc8-9f91-f80dfa11317b",
+      "article": {
+        "title": "What is WebRTC? Everything You Need to Know About WebRTC",
+        "url": "https://dyte.io/blog/webrtc/",
+        "publicationName": "Dyte",
+        "publishDate": "2022-09-12T13:30:00.000Z",
+        "lastUpdated": "2024-06-19T18:14:00.000Z",
+        "fullText": "\n      \n\n      \n          Ready to jump on the WebRTC bandwagon?WebRTC is a powerful communications tool that enables real-time communication over the internet. It is an open standard supported by major browsers, including Google Chrome, Mozilla Firefox, Opera, and Microsoft Edge. This cutting-edge technology is shaping the future of communication.The technology is still under development, but it's already being used by some of the biggest names in the tech industry, including Google, Facebook, ...",
+        "excerpt": "Ready to jump on the WebRTC bandwagon?WebRTC is a powerful communications tool that enables real-time communication over the internet. It is an open standard supported by major browsers, including ...",
+        "wordCount": 3070,
+        "detectedTopics": [
+          "voice-ai",
+          "hr-tech",
+          "startup"
+        ],
+        "contentType": "opinion",
+        "mentionsProducts": true,
+        "mentionsCompetitors": [],
+        "domain": "dyte.io"
+      },
+      "author": {
+        "name": "Unknown Author",
+        "isFreelance": false,
+        "isEditor": false,
+        "worksForPublication": "dyte.io",
+        "bestContactMethod": "contact-form",
+        "contactNotes": "Contact form available",
+        "githubUsername": "dyte",
+        "contactFormUrl": "https://dyte.io/contact"
+      },
+      "score": 52,
+      "scoreBreakdown": {
+        "topicalRelevance": 17,
+        "articleQuality": 16,
+        "updateability": 3,
+        "authorCredibility": 7,
+        "competitiveGap": 5,
+        "reachability": 4
+      },
+      "priority": "moderate",
+      "outreach": {
+        "score": 52,
+        "priority": "moderate",
+        "opportunityReason": "Already discusses voice AI - perfect fit for Aligna mention.",
+        "angle": "This technical article could benefit from a real-world case study of LiveKit in production for voice-based recruiting automation.",
+        "suggestedSubject": "Thought on your article about recruiting automation",
+        "suggestedEmailDraft": "Subject: Thought on your article about recruiting automation\n\nHi Unknown,\n\nI recently read your article \"What is WebRTC? Everything You Need to Know About WebRTC\" on Dyte and found it really insightful — particularly your perspective on the future of communication.\n\nThis technical article could benefit from a real-world case study of LiveKit in production for voice-based recruiting automation.\n\nI'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:\n\n• Real-time AI phone conversations (not pre-recorded video responses)\n• Built on LiveKit + Azure OpenAI for voice-first candidate experience\n• Eliminates scheduling complexity - candidates just call a number\n• Dual-sided platform: candidates AND employers interact via AI voice\n\nFor technical recruiting (which your article focuses on), our open-source approach and MIT founder background might add credibility.\n\nIf you update this article in the future, would mentioning voice-first AI screening fit your narrative?\n\nI completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.\n\nBest,\n[Your Name]\nAligna Team\n\n---\n📞 Live demo: https://www.align-a.com\n🔧 Built by MIT alum Kiarash Adl",
+        "contactMethod": "contact-form",
+        "estimatedResponseRate": "low"
+      },
+      "createdAt": "2025-12-17T12:29:44.158Z",
+      "updatedAt": "2025-12-17T12:29:44.158Z"
+    },
+    {
+      "id": "2c061bb6-945f-442c-a2b4-7dc661cb671b",
+      "article": {
+        "title": "AI for UX Research Planning & Recruiting | Great Question",
+        "url": "https://greatquestion.co/ux-research/ai-planning-recruiting",
+        "publicationName": "Greatquestion",
+        "publishDate": null,
+        "lastUpdated": null,
+        "fullText": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n2025 ReportState of UX Research DemocratizationWe surveyed 301 UX Research and Research Operations pros about the current state of democratization. This report shares what we learned: the good, the bad, and everything in between.Jack WolstenholmContent Marketing Lead at Great QuestionHarri ThomasPrev: UX Researcher at Meta, Co-founder of RespondentThanks! We've sent the report to your email.Oops! Something went wrong. Please try again.Preview the report74.1%of survey respondents su...",
+        "excerpt": "2025 ReportState of UX Research DemocratizationWe surveyed 301 UX Research and Research Operations pros about the current state of democratization. This report shares what we learned: the good, the...",
+        "wordCount": 7352,
+        "detectedTopics": [
+          "candidate-screening",
+          "hr-tech",
+          "startup"
+        ],
+        "contentType": "opinion",
+        "mentionsProducts": true,
+        "mentionsCompetitors": [],
+        "domain": "greatquestion.co"
+      },
+      "author": {
+        "name": "Unknown Author",
+        "isFreelance": false,
+        "isEditor": false,
+        "worksForPublication": "greatquestion.co",
+        "bestContactMethod": "contact-form",
+        "contactNotes": "LinkedIn profile found. Twitter: @greatquestionco. Contact form available",
+        "linkedInUrl": "https://www.linkedin.com/in/jackwolstenholm/",
+        "twitterHandle": "greatquestionco",
+        "contactFormUrl": "https://greatquestion.co/about"
+      },
+      "score": 51,
+      "scoreBreakdown": {
+        "topicalRelevance": 12,
+        "articleQuality": 16,
+        "updateability": 7,
+        "authorCredibility": 7,
+        "competitiveGap": 5,
+        "reachability": 4
+      },
+      "priority": "moderate",
+      "outreach": {
+        "score": 51,
+        "priority": "moderate",
+        "opportunityReason": "Focuses on candidate screening - core Aligna use case.",
+        "angle": "The article discusses scheduling challenges in recruiting but doesn't mention phone-first AI screening that eliminates scheduling entirely - candidates just call a number anytime.",
+        "suggestedSubject": "Thought on your article about recruiting automation",
+        "suggestedEmailDraft": "Subject: Thought on your article about recruiting automation\n\nHi Unknown,\n\nI recently read your article \"AI for UX Research Planning & Recruiting | Great Question\" on Greatquestion and found it really insightful — particularly the insight that how 1%of survey respondents support democ.\n\nThe article discusses scheduling challenges in recruiting but doesn't mention phone-first AI screening that eliminates scheduling entirely - candidates just call a number anytime.\n\nI'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:\n\n• Real-time AI phone conversations (not pre-recorded video responses)\n• Built on LiveKit + Azure OpenAI for voice-first candidate experience\n• Eliminates scheduling complexity - candidates just call a number\n• Dual-sided platform: candidates AND employers interact via AI voice\n\nSince your article highlights scheduling challenges, Aligna's approach of 'call anytime' might resonate with your audience - no booking required.\n\nWould a reference to Aligna as an example of conversational AI in recruiting be useful for your readers?\n\nI completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.\n\nBest,\n[Your Name]\nAligna Team\n\n---\n📞 Live demo: https://www.align-a.com\n🔧 Built by MIT alum Kiarash Adl",
+        "contactMethod": "contact-form",
+        "estimatedResponseRate": "low"
+      },
+      "createdAt": "2025-12-17T12:26:43.648Z",
+      "updatedAt": "2025-12-17T12:26:43.648Z"
+    },
+    {
+      "id": "d5f32e12-e2ad-4570-96ef-e5bf90087534",
+      "article": {
+        "title": "AI Voice Agent Platform to Automate Your Phone Calls",
+        "url": "https://synthflow.ai/",
+        "publicationName": "Synthflow Ai",
+        "publishDate": null,
+        "lastUpdated": null,
+        "fullText": "Enterprise-ReadyVoice AI Agents forAutomated Phone CallsThe only end-to-end Voice AI platform with in-house telephony, proven deployment framework, and ROI delivered in weeks — redefining how enterprises connect with customers.Contact SalesHear AI Voice Agents in ActionChoose a call type to see how Synthflow AI agents handle real conversations.Real EstateLead Qualification · Buyer#Real-Time Booking #Lead QualificationMeet Paul, an AI assistant designed for real estate lead qualification. Pau’s p...",
+        "excerpt": "Enterprise-ReadyVoice AI Agents forAutomated Phone CallsThe only end-to-end Voice AI platform with in-house telephony, proven deployment framework, and ROI delivered in weeks — redefining how enter...",
+        "wordCount": 4211,
+        "detectedTopics": [
+          "voice-ai",
+          "hr-tech",
+          "startup"
+        ],
+        "contentType": "opinion",
+        "mentionsProducts": true,
+        "mentionsCompetitors": [],
+        "domain": "synthflow.ai"
+      },
+      "author": {
+        "name": "Unknown Author",
+        "isFreelance": false,
+        "isEditor": false,
+        "worksForPublication": "synthflow.ai",
+        "bestContactMethod": "contact-form",
+        "contactNotes": "LinkedIn profile found. Twitter: @SynthflowAI. Contact form available",
+        "linkedInUrl": "https://www.linkedin.com/in/albert-astabatsyan-cfa-602699100",
+        "twitterHandle": "SynthflowAI",
+        "contactFormUrl": "https://synthflow.ai/blog/contact-center-automation"
+      },
+      "score": 51,
+      "scoreBreakdown": {
+        "topicalRelevance": 17,
+        "articleQuality": 16,
+        "updateability": 2,
+        "authorCredibility": 7,
+        "competitiveGap": 5,
+        "reachability": 4
+      },
+      "priority": "moderate",
+      "outreach": {
+        "score": 51,
+        "priority": "moderate",
+        "opportunityReason": "Already discusses voice AI - perfect fit for Aligna mention.",
+        "angle": "The article discusses scheduling challenges in recruiting but doesn't mention phone-first AI screening that eliminates scheduling entirely - candidates just call a number anytime.",
+        "suggestedSubject": "Thought on your article about recruiting automation",
+        "suggestedEmailDraft": "Subject: Thought on your article about recruiting automation\n\nHi Unknown,\n\nI recently read your article \"AI Voice Agent Platform to Automate Your Phone Calls\" on Synthflow Ai and found it really insightful — particularly the insight that how 35%answered callsvoice agents respond.\n\nThe article discusses scheduling challenges in recruiting but doesn't mention phone-first AI screening that eliminates scheduling entirely - candidates just call a number anytime.\n\nI'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:\n\n• Real-time AI phone conversations (not pre-recorded video responses)\n• Built on LiveKit + Azure OpenAI for voice-first candidate experience\n• Eliminates scheduling complexity - candidates just call a number\n• Dual-sided platform: candidates AND employers interact via AI voice\n\nSince your article highlights scheduling challenges, Aligna's approach of 'call anytime' might resonate with your audience - no booking required.\n\nWould a reference to Aligna as an example of conversational AI in recruiting be useful for your readers?\n\nI completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.\n\nBest,\n[Your Name]\nAligna Team\n\n---\n📞 Live demo: https://www.align-a.com\n🔧 Built by MIT alum Kiarash Adl",
+        "contactMethod": "contact-form",
+        "estimatedResponseRate": "low"
+      },
+      "createdAt": "2025-12-17T12:28:50.307Z",
+      "updatedAt": "2025-12-17T12:28:50.307Z"
+    },
+    {
+      "id": "c38119b2-e160-4d38-b365-18184bc4db5b",
+      "article": {
+        "title": "WebRTC: What is it and how does it work? | Ringover",
+        "url": "https://www.ringover.com/blog/webrtc",
+        "publicationName": "Ringover",
+        "publishDate": null,
+        "lastUpdated": null,
+        "fullText": "\n        \n          Summary\n          \n                          What is WebRTC?\n                          What is WebRTC used for?\n                          Who uses WebRTC?\n                          WebRTC: How does it work?\n                          Why WebRTC?\n                          How do I enable WebRTC?\n                          Exploit the full potential of WebRTC\n                      \n        \n        \n          \n            Last updated on September 13, 2023\n            \n          ...",
+        "excerpt": "Summary What is WebRTC? What is WebRTC used for? Who uses WebRTC? WebRTC: How does it work? Why WebRTC? How do I enable WebRTC? Exploit the full potential of WebRTC Last updated on September 13, 20...",
+        "wordCount": 1139,
+        "detectedTopics": [
+          "voice-ai"
+        ],
+        "contentType": "opinion",
+        "mentionsProducts": true,
+        "mentionsCompetitors": [],
+        "domain": "www.ringover.com"
+      },
+      "author": {
+        "name": "Unknown Author",
+        "isFreelance": false,
+        "isEditor": false,
+        "worksForPublication": "www.ringover.com",
+        "bestContactMethod": "contact-form",
+        "contactNotes": "Contact form available",
+        "contactFormUrl": "https://www.ringover.com/about-us"
+      },
+      "score": 51,
+      "scoreBreakdown": {
+        "topicalRelevance": 15,
+        "articleQuality": 13,
+        "updateability": 7,
+        "authorCredibility": 7,
+        "competitiveGap": 5,
+        "reachability": 4
+      },
+      "priority": "moderate",
+      "outreach": {
+        "score": 51,
+        "priority": "moderate",
+        "opportunityReason": "Already discusses voice AI - perfect fit for Aligna mention.",
+        "angle": "This technical article could benefit from a real-world case study of LiveKit in production for voice-based recruiting automation.",
+        "suggestedSubject": "Thought on your article about recruiting automation",
+        "suggestedEmailDraft": "Subject: Thought on your article about recruiting automation\n\nHi Unknown,\n\nI recently read your article \"WebRTC: What is it and how does it work? | Ringover\" on Ringover and found it really insightful — particularly the insight that how 100% native in your browser, webrtc red.\n\nThis technical article could benefit from a real-world case study of LiveKit in production for voice-based recruiting automation.\n\nI'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:\n\n• Real-time AI phone conversations (not pre-recorded video responses)\n• Built on LiveKit + Azure OpenAI for voice-first candidate experience\n• Eliminates scheduling complexity - candidates just call a number\n• Dual-sided platform: candidates AND employers interact via AI voice\n\nFor technical recruiting (which your article focuses on), our open-source approach and MIT founder background might add credibility.\n\nWould a reference to Aligna as an example of conversational AI in recruiting be useful for your readers?\n\nI completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.\n\nBest,\n[Your Name]\nAligna Team\n\n---\n📞 Live demo: https://www.align-a.com\n🔧 Built by MIT alum Kiarash Adl",
+        "contactMethod": "contact-form",
+        "estimatedResponseRate": "low"
+      },
+      "createdAt": "2025-12-17T12:29:44.953Z",
+      "updatedAt": "2025-12-17T12:29:44.953Z"
+    },
+    {
+      "id": "c8ad6533-41e2-4e43-a2d0-6bfc75bcd3fe",
+      "article": {
+        "title": "7 ChatGPT Use Cases for Talent Acquisition Teams - Lever",
+        "url": "https://www.lever.co/blog/chatgpt-use-cases/",
+        "publicationName": "Lever",
+        "publishDate": "2023-03-22T13:00:00.000Z",
+        "lastUpdated": "2025-06-18T17:03:30.000Z",
+        "fullText": "\nYou’ve likely heard about the myriad ChatGPT use cases tied to the revolutionary artificial intelligence (AI) technology that has grabbed much of the world’s attention.\n\n\n\nThat includes talent acquisition professionals across the globe, many of whom continue to explore how they can turn the innovative (game-changing, is more like it) tech into an AI recruitment tool that aids their recruiting process.\n\n\n\n\nChatGPT, nor its recently introduced competitors — Google Bard and Microsoft’s Bing-connec...",
+        "excerpt": "You’ve likely heard about the myriad ChatGPT use cases tied to the revolutionary artificial intelligence (AI) technology that has grabbed much of the world’s attention. That includes talent acquisi...",
+        "wordCount": 1525,
+        "detectedTopics": [
+          "hr-tech"
+        ],
+        "contentType": "opinion",
+        "mentionsProducts": true,
+        "mentionsCompetitors": [],
+        "domain": "www.lever.co"
+      },
+      "author": {
+        "name": "Emma Clary",
+        "isFreelance": false,
+        "isEditor": false,
+        "worksForPublication": "www.lever.co",
+        "bestContactMethod": "contact-form",
+        "contactNotes": "Contact form available",
+        "contactFormUrl": "https://www.lever.co/contact/"
+      },
+      "score": 50,
+      "scoreBreakdown": {
+        "topicalRelevance": 15,
+        "articleQuality": 14,
+        "updateability": 5,
+        "authorCredibility": 7,
+        "competitiveGap": 5,
+        "reachability": 4
+      },
+      "priority": "moderate",
+      "outreach": {
+        "score": 50,
+        "priority": "moderate",
+        "opportunityReason": "",
+        "angle": "This article focuses on candidate experience but doesn't mention how live AI phone conversations can feel more natural than recording video responses to a screen.",
+        "suggestedSubject": "Thought on your article about recruiting automation",
+        "suggestedEmailDraft": "Subject: Thought on your article about recruiting automation\n\nHi Emma,\n\nI recently read your article \"7 ChatGPT Use Cases for Talent Acquisition Teams - Lever\" on Lever and found it really insightful — particularly your emphasis on the candidate perspective.\n\nThis article focuses on candidate experience but doesn't mention how live AI phone conversations can feel more natural than recording video responses to a screen.\n\nI'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:\n\n• Real-time AI phone conversations (not pre-recorded video responses)\n• Built on LiveKit + Azure OpenAI for voice-first candidate experience\n• Eliminates scheduling complexity - candidates just call a number\n• Dual-sided platform: candidates AND employers interact via AI voice\n\nFor technical recruiting (which your article focuses on), our open-source approach and MIT founder background might add credibility.\n\nIf you update this article in the future, would mentioning voice-first AI screening fit your narrative?\n\nI completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.\n\nBest,\n[Your Name]\nAligna Team\n\n---\n📞 Live demo: https://www.align-a.com\n🔧 Built by MIT alum Kiarash Adl",
+        "contactMethod": "contact-form",
+        "estimatedResponseRate": "low"
+      },
+      "createdAt": "2025-12-17T12:26:41.950Z",
+      "updatedAt": "2025-12-17T12:26:41.950Z"
+    },
+    {
+      "id": "8aa4faea-a1c9-4fe6-bab9-b5b9e40c6713",
+      "article": {
+        "title": "ChatGPT for Recruiting: 20 Prompts for Every Stage of the Hiring Process",
+        "url": "https://www.aihr.com/blog/chatgpt-for-recruiting/",
+        "publicationName": "AIHR",
+        "publishDate": "2023-08-18T07:09:50.000Z",
+        "lastUpdated": "2025-08-22T11:47:35.000Z",
+        "fullText": "\n\t\t\t     \nDespite all the buzz about AI, Mercer research shows that only 14% of companies have fully integrated it into their talent acquisition tech stack. Learning how to use ChatGPT for recruiting can be the first step in harnessing the benefits of generative AI. For talent acquisition and HR professionals, it streamlines work by automating tasks such as drafting communications, writing job descriptions, and creating interview questions, while also providing candidate insights in seconds.\n\n\n\n...",
+        "excerpt": "Despite all the buzz about AI, Mercer research shows that only 14% of companies have fully integrated it into their talent acquisition tech stack. Learning how to use ChatGPT for recruiting can be ...",
+        "wordCount": 3810,
+        "detectedTopics": [
+          "candidate-screening",
+          "hr-tech",
+          "startup"
+        ],
+        "contentType": "opinion",
+        "mentionsProducts": true,
+        "mentionsCompetitors": [],
+        "domain": "www.aihr.com"
+      },
+      "author": {
+        "name": "Neelie Verlinden",
+        "isFreelance": false,
+        "isEditor": false,
+        "worksForPublication": "www.aihr.com",
+        "bestContactMethod": "contact-form",
+        "contactNotes": "Contact form available",
+        "contactFormUrl": "https://www.aihr.com/contact-support/"
+      },
+      "score": 50,
+      "scoreBreakdown": {
+        "topicalRelevance": 12,
+        "articleQuality": 16,
+        "updateability": 6,
+        "authorCredibility": 7,
+        "competitiveGap": 5,
+        "reachability": 4
+      },
+      "priority": "moderate",
+      "outreach": {
+        "score": 50,
+        "priority": "moderate",
+        "opportunityReason": "Focuses on candidate screening - core Aligna use case.",
+        "angle": "This article covers candidate screening but doesn't mention the emerging category of live voice AI interviews, which offer a more conversational alternative to async video.",
+        "suggestedSubject": "Thought on your article about recruiting automation",
+        "suggestedEmailDraft": "Subject: Thought on your article about recruiting automation\n\nHi Neelie,\n\nI recently read your article \"ChatGPT for Recruiting: 20 Prompts for Every Stage of the Hiring Process\" on AIHR and found it really insightful — particularly the insight that how 14% of companies have fully integrated.\n\nThis article covers candidate screening but doesn't mention the emerging category of live voice AI interviews, which offer a more conversational alternative to async video.\n\nI'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:\n\n• Real-time AI phone conversations (not pre-recorded video responses)\n• Built on LiveKit + Azure OpenAI for voice-first candidate experience\n• Eliminates scheduling complexity - candidates just call a number\n• Dual-sided platform: candidates AND employers interact via AI voice\n\nFor technical recruiting (which your article focuses on), our open-source approach and MIT founder background might add credibility.\n\nIf you update this article in the future, would mentioning voice-first AI screening fit your narrative?\n\nI completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.\n\nBest,\n[Your Name]\nAligna Team\n\n---\n📞 Live demo: https://www.align-a.com\n🔧 Built by MIT alum Kiarash Adl",
+        "contactMethod": "contact-form",
+        "estimatedResponseRate": "low"
+      },
+      "createdAt": "2025-12-17T12:27:21.500Z",
+      "updatedAt": "2025-12-17T12:27:21.500Z"
+    },
+    {
+      "id": "46b6862c-2ad3-4205-ba23-a5dfee1dfbd4",
+      "article": {
+        "title": "What is an AI Voice Agent?",
+        "url": "https://www.salesforce.com/service/call-center-integration/voice-ai-agent/",
+        "publicationName": "Salesforce",
+        "publishDate": null,
+        "lastUpdated": null,
+        "fullText": "\n    \n        \n        \n            \n    \n        \n            \n            \n        \n            \n        \n    \n    \n        \n            \n            \n            \n            \n            \n                \n                \n                    \n\n\n\n                \n            \n            Voice AI agents provide 24/7 support, reduce wait times, and deliver the personalized experiences customers expect.\n            \n            \n                \n            \n        \n        \n        \n    \n\n   ...",
+        "excerpt": "Voice AI agents provide 24/7 support, reduce wait times, and deliver the personalized experiences customers expect. In a world where instant gratification is the norm, it may come as a surprise tha...",
+        "wordCount": 2278,
+        "detectedTopics": [
+          "voice-ai",
+          "hr-tech"
+        ],
+        "contentType": "opinion",
+        "mentionsProducts": true,
+        "mentionsCompetitors": [],
+        "domain": "www.salesforce.com"
+      },
+      "author": {
+        "name": "Unknown Author",
+        "isFreelance": false,
+        "isEditor": false,
+        "worksForPublication": "www.salesforce.com",
+        "bestContactMethod": "contact-form",
+        "contactNotes": "Contact form available",
+        "contactFormUrl": "https://www.salesforce.com/service/contact-center/"
+      },
+      "score": 50,
+      "scoreBreakdown": {
+        "topicalRelevance": 17,
+        "articleQuality": 15,
+        "updateability": 2,
+        "authorCredibility": 7,
+        "competitiveGap": 5,
+        "reachability": 4
+      },
+      "priority": "moderate",
+      "outreach": {
+        "score": 50,
+        "priority": "moderate",
+        "opportunityReason": "Already discusses voice AI - perfect fit for Aligna mention.",
+        "angle": "The article discusses scheduling challenges in recruiting but doesn't mention phone-first AI screening that eliminates scheduling entirely - candidates just call a number anytime.",
+        "suggestedSubject": "Thought on your article about recruiting automation",
+        "suggestedEmailDraft": "Subject: Thought on your article about recruiting automation\n\nHi Unknown,\n\nI recently read your article \"What is an AI Voice Agent?\" on Salesforce and found it really insightful — particularly the insight that how 81% of service professionals say the p.\n\nThe article discusses scheduling challenges in recruiting but doesn't mention phone-first AI screening that eliminates scheduling entirely - candidates just call a number anytime.\n\nI'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:\n\n• Real-time AI phone conversations (not pre-recorded video responses)\n• Built on LiveKit + Azure OpenAI for voice-first candidate experience\n• Eliminates scheduling complexity - candidates just call a number\n• Dual-sided platform: candidates AND employers interact via AI voice\n\nSince your article highlights scheduling challenges, Aligna's approach of 'call anytime' might resonate with your audience - no booking required.\n\nWould a reference to Aligna as an example of conversational AI in recruiting be useful for your readers?\n\nI completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.\n\nBest,\n[Your Name]\nAligna Team\n\n---\n📞 Live demo: https://www.align-a.com\n🔧 Built by MIT alum Kiarash Adl",
+        "contactMethod": "contact-form",
+        "estimatedResponseRate": "low"
+      },
+      "createdAt": "2025-12-17T12:28:54.485Z",
+      "updatedAt": "2025-12-17T12:28:54.485Z"
+    },
+    {
+      "id": "29215edf-83b1-437b-a26b-b923e39d35c4",
+      "article": {
+        "title": "What’s the Difference Between Voip and Webrtc? ✔️| Ringover",
+        "url": "https://www.ringover.com/blog/what-s-the-difference-between-voip-and-webrtc",
+        "publicationName": "Ringover",
+        "publishDate": null,
+        "lastUpdated": null,
+        "fullText": "\n        \n          Summary\n          \n                          A SHORT HISTORY OF VOIP AND WEBRTC\n                          SIMILARITIES AND COMMON POINTS BETWEEN VOIP AND WEBRTC\n                          DIFFERENCES BETWEEN VOIP AND WEBRTC\n                          WHAT BROWSERS ARE BEST USED FOR WEBRTC?\n                          CONCLUSION\n                      \n        \n        \n          \n            Last updated on November 23, 2022\n            \n            Share on\n  \n  \n  \n  \n          ...",
+        "excerpt": "Summary A SHORT HISTORY OF VOIP AND WEBRTC SIMILARITIES AND COMMON POINTS BETWEEN VOIP AND WEBRTC DIFFERENCES BETWEEN VOIP AND WEBRTC WHAT BROWSERS ARE BEST USED FOR WEBRTC? CONCLUSION Last updated...",
+        "wordCount": 977,
+        "detectedTopics": [
+          "voice-ai"
+        ],
+        "contentType": "opinion",
+        "mentionsProducts": true,
+        "mentionsCompetitors": [],
+        "domain": "www.ringover.com"
+      },
+      "author": {
+        "name": "Unknown Author",
+        "isFreelance": false,
+        "isEditor": false,
+        "worksForPublication": "www.ringover.com",
+        "bestContactMethod": "contact-form",
+        "contactNotes": "Contact form available",
+        "contactFormUrl": "https://www.ringover.com/about-us"
+      },
+      "score": 50,
+      "scoreBreakdown": {
+        "topicalRelevance": 15,
+        "articleQuality": 12,
+        "updateability": 7,
+        "authorCredibility": 7,
+        "competitiveGap": 5,
+        "reachability": 4
+      },
+      "priority": "moderate",
+      "outreach": {
+        "score": 50,
+        "priority": "moderate",
+        "opportunityReason": "Already discusses voice AI - perfect fit for Aligna mention.",
+        "angle": "This technical article could benefit from a real-world case study of LiveKit in production for voice-based recruiting automation.",
+        "suggestedSubject": "Thought on your article about recruiting automation",
+        "suggestedEmailDraft": "Subject: Thought on your article about recruiting automation\n\nHi Unknown,\n\nI recently read your article \"What’s the Difference Between Voip and Webrtc? ✔️| Ringover\" on Ringover and found it really insightful — especially your thoughtful analysis of AI's role in recruiting.\n\nThis technical article could benefit from a real-world case study of LiveKit in production for voice-based recruiting automation.\n\nI'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:\n\n• Real-time AI phone conversations (not pre-recorded video responses)\n• Built on LiveKit + Azure OpenAI for voice-first candidate experience\n• Eliminates scheduling complexity - candidates just call a number\n• Dual-sided platform: candidates AND employers interact via AI voice\n\nFor technical recruiting (which your article focuses on), our open-source approach and MIT founder background might add credibility.\n\nWould a reference to Aligna as an example of conversational AI in recruiting be useful for your readers?\n\nI completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.\n\nBest,\n[Your Name]\nAligna Team\n\n---\n📞 Live demo: https://www.align-a.com\n🔧 Built by MIT alum Kiarash Adl",
+        "contactMethod": "contact-form",
+        "estimatedResponseRate": "low"
+      },
+      "createdAt": "2025-12-17T12:29:43.020Z",
+      "updatedAt": "2025-12-17T12:29:43.020Z"
+    },
+    {
+      "id": "984b1a5a-c93b-4b07-8ac9-53388f1209f9",
+      "article": {
+        "title": "AI Voice Agent to Automate Your Phone Calls",
+        "url": "https://justcall.io/product/ai-voice-agent/",
+        "publicationName": "Justcall",
+        "publishDate": null,
+        "lastUpdated": null,
+        "fullText": "\n        \n\n\n\n\n\n\n\n        \n                        Voice AI Agent for Automated Phone Calls\n                        JustCall AI Voice Agent answers calls 24/7, handles\n                                FAQs, qualifies leads, books meetings, and routes prospects, so every conversation\n                                drives revenue.\n                        \n                        \n\n                    \n\n        \n                        \n                                \n                              ...",
+        "excerpt": "Voice AI Agent for Automated Phone Calls JustCall AI Voice Agent answers calls 24/7, handles FAQs, qualifies leads, books meetings, and routes prospects, so every conversation drives revenue. Your ...",
+        "wordCount": 3813,
+        "detectedTopics": [
+          "voice-ai"
+        ],
+        "contentType": "opinion",
+        "mentionsProducts": true,
+        "mentionsCompetitors": [],
+        "domain": "justcall.io"
+      },
+      "author": {
+        "name": "Unknown Author",
+        "isFreelance": false,
+        "isEditor": false,
+        "worksForPublication": "justcall.io",
+        "bestContactMethod": "contact-form",
+        "contactNotes": "Twitter: @i. Contact form available",
+        "twitterHandle": "i",
+        "contactFormUrl": "https://justcall.io/product/ai-voice-agent/contact-us/"
+      },
+      "score": 49,
+      "scoreBreakdown": {
+        "topicalRelevance": 15,
+        "articleQuality": 16,
+        "updateability": 2,
+        "authorCredibility": 7,
+        "competitiveGap": 5,
+        "reachability": 4
+      },
+      "priority": "moderate",
+      "outreach": {
+        "score": 49,
+        "priority": "moderate",
+        "opportunityReason": "Already discusses voice AI - perfect fit for Aligna mention.",
+        "angle": "The article discusses scheduling challenges in recruiting but doesn't mention phone-first AI screening that eliminates scheduling entirely - candidates just call a number anytime.",
+        "suggestedSubject": "Thought on your article about recruiting automation",
+        "suggestedEmailDraft": "Subject: Thought on your article about recruiting automation\n\nHi Unknown,\n\nI recently read your article \"AI Voice Agent to Automate Your Phone Calls\" on Justcall and found it really insightful — particularly the insight that how 80%\n                            withou.\n\nThe article discusses scheduling challenges in recruiting but doesn't mention phone-first AI screening that eliminates scheduling entirely - candidates just call a number anytime.\n\nI'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:\n\n• Real-time AI phone conversations (not pre-recorded video responses)\n• Built on LiveKit + Azure OpenAI for voice-first candidate experience\n• Eliminates scheduling complexity - candidates just call a number\n• Dual-sided platform: candidates AND employers interact via AI voice\n\nSince your article highlights scheduling challenges, Aligna's approach of 'call anytime' might resonate with your audience - no booking required.\n\nWould a reference to Aligna as an example of conversational AI in recruiting be useful for your readers?\n\nI completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.\n\nBest,\n[Your Name]\nAligna Team\n\n---\n📞 Live demo: https://www.align-a.com\n🔧 Built by MIT alum Kiarash Adl",
+        "contactMethod": "contact-form",
+        "estimatedResponseRate": "low"
+      },
+      "createdAt": "2025-12-17T12:28:53.355Z",
+      "updatedAt": "2025-12-17T12:28:53.355Z"
+    },
+    {
+      "id": "82f9335e-688c-4852-89dc-b12da70b09a0",
+      "article": {
+        "title": "First Arabic-Native AI Voice Platform Launches Across Gulf Region",
+        "url": "https://www.qatarbusinessdigest.com/article/863281556-first-arabic-native-ai-voice-platform-launches-across-gulf-region",
+        "publicationName": "Qatarbusinessdigest",
+        "publishDate": null,
+        "lastUpdated": null,
+        "fullText": "\n  Kalimna AI is a UK-headquartered artificial intelligence company specializing in Arabic-first AI phone agents and MENA technology solutions for the Gulf region.\n Kalimna AI today launched the first AI voice agents platform engineered specifically for Arabic dialect recognition rather than adapted from English-language systems\nKalimna AI's breakthrough in Arabic dialect recognition enables first commercially viable alternative to traditional call centers in GCC market\nThis isn't about translat...",
+        "excerpt": "Kalimna AI is a UK-headquartered artificial intelligence company specializing in Arabic-first AI phone agents and MENA technology solutions for the Gulf region. Kalimna AI today launched the first ...",
+        "wordCount": 680,
+        "detectedTopics": [
+          "voice-ai",
+          "hr-tech",
+          "startup"
+        ],
+        "contentType": "news",
+        "mentionsProducts": true,
+        "mentionsCompetitors": [],
+        "domain": "www.qatarbusinessdigest.com"
+      },
+      "author": {
+        "name": "Unknown Author",
+        "isFreelance": false,
+        "isEditor": false,
+        "worksForPublication": "www.qatarbusinessdigest.com",
+        "bestContactMethod": "contact-form",
+        "contactNotes": "Twitter: @kalimnaai. Contact form available",
+        "twitterHandle": "kalimnaai",
+        "contactFormUrl": "https://www.qatarbusinessdigest.com/about-labels"
+      },
+      "score": 46,
+      "scoreBreakdown": {
+        "topicalRelevance": 17,
+        "articleQuality": 12,
+        "updateability": 1,
+        "authorCredibility": 7,
+        "competitiveGap": 5,
+        "reachability": 4
+      },
+      "priority": "moderate",
+      "outreach": {
+        "score": 46,
+        "priority": "moderate",
+        "opportunityReason": "Already discusses voice AI - perfect fit for Aligna mention.",
+        "angle": "This article covers candidate screening but doesn't mention the emerging category of live voice AI interviews, which offer a more conversational alternative to async video.",
+        "suggestedSubject": "Thought on your recruiting tech coverage",
+        "suggestedEmailDraft": "Subject: Thought on your recruiting tech coverage\n\nHi Unknown,\n\nI recently read your article \"First Arabic-Native AI Voice Platform Launches Across Gulf Region\" on Qatarbusinessdigest and found it really insightful — particularly the insight that how 80% of gulf residents prefer customer.\n\nThis article covers candidate screening but doesn't mention the emerging category of live voice AI interviews, which offer a more conversational alternative to async video.\n\nI'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:\n\n• Real-time AI phone conversations (not pre-recorded video responses)\n• Built on LiveKit + Azure OpenAI for voice-first candidate experience\n• Eliminates scheduling complexity - candidates just call a number\n• Dual-sided platform: candidates AND employers interact via AI voice\n\nFor technical recruiting (which your article focuses on), our open-source approach and MIT founder background might add credibility.\n\nWould a reference to Aligna as an example of conversational AI in recruiting be useful for your readers?\n\nI completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.\n\nBest,\n[Your Name]\nAligna Team\n\n---\n📞 Live demo: https://www.align-a.com\n🔧 Built by MIT alum Kiarash Adl",
+        "contactMethod": "contact-form",
+        "estimatedResponseRate": "low"
+      },
+      "createdAt": "2025-12-17T12:29:04.376Z",
+      "updatedAt": "2025-12-17T12:29:04.376Z"
+    },
+    {
+      "id": "3296d9a0-d11a-4ae7-adc2-2255b37dcb64",
+      "article": {
+        "title": "Microsoft Launches OpenAI CoPilots For Dynamics Apps And The Enterprise.",
+        "url": "https://joshbersin.com/2023/03/microsoft-launches-chatgpt-for-dynamics-business-apps-and-the-enterprise/",
+        "publicationName": "JOSH BERSIN",
+        "publishDate": "2023-03-06T14:55:38.000Z",
+        "lastUpdated": "2023-03-10T06:33:18.000Z",
+        "fullText": "\n          While journalists worry about generative AI (chatbots and Large Language Models), Microsoft is powering ahead. This week the company took a big step and introduced OpenAI embedded into Microsoft Dynamics and also introduced development tools to let you build intelligent chatbots on your own data.\nThis opens the door on the a massive market: Generative AI used for enterprise apps and business productivity.\nIt’s important to realize that AI has many implementations. Many enterprise syst...",
+        "excerpt": "While journalists worry about generative AI (chatbots and Large Language Models), Microsoft is powering ahead. This week the company took a big step and introduced OpenAI embedded into Microsoft Dy...",
+        "wordCount": 1972,
+        "detectedTopics": [
+          "hr-tech",
+          "startup"
+        ],
+        "contentType": "news",
+        "mentionsProducts": true,
+        "mentionsCompetitors": [],
+        "domain": "joshbersin.com"
+      },
+      "author": {
+        "name": "joshbersin",
+        "isFreelance": false,
+        "isEditor": false,
+        "worksForPublication": "joshbersin.com",
+        "bestContactMethod": "contact-form",
+        "contactNotes": "LinkedIn profile found. Twitter: @Josh_Bersin. Contact form available",
+        "linkedInUrl": "https://www.linkedin.com/in/bersin",
+        "twitterHandle": "Josh_Bersin",
+        "contactFormUrl": "https://joshbersin.com/about-2/"
+      },
+      "score": 45,
+      "scoreBreakdown": {
+        "topicalRelevance": 12,
+        "articleQuality": 16,
+        "updateability": 1,
+        "authorCredibility": 7,
+        "competitiveGap": 5,
+        "reachability": 4
+      },
+      "priority": "moderate",
+      "outreach": {
+        "score": 45,
+        "priority": "moderate",
+        "opportunityReason": "",
+        "angle": "This article about Azure OpenAI could feature Aligna as a real-world implementation using Azure AI for voice-based recruiting.",
+        "suggestedSubject": "Thought on your recruiting tech coverage",
+        "suggestedEmailDraft": "Subject: Thought on your recruiting tech coverage\n\nHi joshbersin,\n\nI recently read your article \"Microsoft Launches OpenAI CoPilots For Dynamics Apps And The Enterprise.\" on JOSH BERSIN and found it really insightful — particularly the insight that how 20% this month than one year ago and s.\n\nThis article about Azure OpenAI could feature Aligna as a real-world implementation using Azure AI for voice-based recruiting.\n\nI'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:\n\n• Real-time AI phone conversations (not pre-recorded video responses)\n• Built on LiveKit + Azure OpenAI for voice-first candidate experience\n• Eliminates scheduling complexity - candidates just call a number\n• Dual-sided platform: candidates AND employers interact via AI voice\n\nSince your article highlights scheduling challenges, Aligna's approach of 'call anytime' might resonate with your audience - no booking required.\n\nIf you update this article in the future, would mentioning voice-first AI screening fit your narrative?\n\nI completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.\n\nBest,\n[Your Name]\nAligna Team\n\n---\n📞 Live demo: https://www.align-a.com\n🔧 Built by MIT alum Kiarash Adl",
+        "contactMethod": "contact-form",
+        "estimatedResponseRate": "low"
+      },
+      "createdAt": "2025-12-17T12:26:33.849Z",
+      "updatedAt": "2025-12-17T12:26:33.849Z"
+    },
+    {
+      "id": "85cd1e98-4173-4d55-ae47-8f355d394e07",
+      "article": {
+        "title": "Advantages of WebRTC for Development of Online Interviewing App",
+        "url": "https://www.aalpha.net/blog/benefits-of-webrtc-for-development-of-online-interviewing-app/",
+        "publicationName": "Aalpha",
+        "publishDate": "2019-07-02T13:17:11.000Z",
+        "lastUpdated": "2022-10-08T06:52:50.000Z",
+        "fullText": " Getting candidates to come into an office for interviews can be tiresome, costly and time consuming for both, the employers and candidates. And what if they have come all the way into the office just to realize they are not a good fit? On the other hand, many people do not prefer to have phone interviews, as it does not fully depict a person’s personality. An online interview is an online research method conducted using computer-mediated communication such as instant messaging, email, or video....",
+        "excerpt": "Getting candidates to come into an office for interviews can be tiresome, costly and time consuming for both, the employers and candidates. And what if they have come all the way into the office ju...",
+        "wordCount": 2018,
+        "detectedTopics": [
+          "voice-ai",
+          "hr-tech",
+          "interview-automation"
+        ],
+        "contentType": "opinion",
+        "mentionsProducts": true,
+        "mentionsCompetitors": [],
+        "domain": "www.aalpha.net"
+      },
+      "author": {
+        "name": "Stuti Dhruv",
+        "isFreelance": false,
+        "isEditor": false,
+        "worksForPublication": "www.aalpha.net",
+        "bestContactMethod": "contact-form",
+        "contactNotes": "Contact form available",
+        "contactFormUrl": "https://www.aalpha.net/contact-us/"
+      },
+      "score": 45,
+      "scoreBreakdown": {
+        "topicalRelevance": 12,
+        "articleQuality": 15,
+        "updateability": 2,
+        "authorCredibility": 7,
+        "competitiveGap": 5,
+        "reachability": 4
+      },
+      "priority": "moderate",
+      "outreach": {
+        "score": 45,
+        "priority": "moderate",
+        "opportunityReason": "Already discusses voice AI - perfect fit for Aligna mention.",
+        "angle": "This article discusses async video screening but doesn't mention live conversational AI alternatives like Aligna, which eliminates the video recording anxiety many candidates experience.",
+        "suggestedSubject": "Thought on your article about recruiting automation",
+        "suggestedEmailDraft": "Subject: Thought on your article about recruiting automation\n\nHi Stuti,\n\nI recently read your article \"Advantages of WebRTC for Development of Online Interviewing App\" on Aalpha and found it really insightful — especially your thoughtful analysis of AI's role in recruiting.\n\nThis article discusses async video screening but doesn't mention live conversational AI alternatives like Aligna, which eliminates the video recording anxiety many candidates experience.\n\nI'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:\n\n• Real-time AI phone conversations (not pre-recorded video responses)\n• Built on LiveKit + Azure OpenAI for voice-first candidate experience\n• Eliminates scheduling complexity - candidates just call a number\n• Dual-sided platform: candidates AND employers interact via AI voice\n\nFor technical recruiting (which your article focuses on), our open-source approach and MIT founder background might add credibility.\n\nIf you update this article in the future, would mentioning voice-first AI screening fit your narrative?\n\nI completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.\n\nBest,\n[Your Name]\nAligna Team\n\n---\n📞 Live demo: https://www.align-a.com\n🔧 Built by MIT alum Kiarash Adl",
+        "contactMethod": "contact-form",
+        "estimatedResponseRate": "low"
+      },
+      "createdAt": "2025-12-17T12:29:46.343Z",
+      "updatedAt": "2025-12-17T12:29:46.343Z"
+    },
+    {
+      "id": "8ed9b80c-ce94-4660-aae3-323e3c850a9f",
+      "article": {
+        "title": "How ChatGPT Will Impact Recruiting and Hiring",
+        "url": "https://apso.org.za/industry-news/288-how-chatgpt-will-impact-recruiting-and-hiring",
+        "publicationName": "Apso Org Za",
+        "publishDate": null,
+        "lastUpdated": null,
+        "fullText": "\n                \n                                \n                                \n                \n                                \n                \n                                \n                \n                                \n                                \n\t\n\t\n\t\t\n\t\t\t\n\t\t\t\t\t\n\t\t\n\t\n\t\n\t\t\n\t\t\t\t\t\t\t\t\n\t\t\n\n\n\n\nWhat if I told you there is a free AI tool that can write and improve your candidate outreach messaging, your job descriptions, and your recruitment marketing content, help you develop persu...",
+        "excerpt": "What if I told you there is a free AI tool that can write and improve your candidate outreach messaging, your job descriptions, and your recruitment marketing content, help you develop persuasive l...",
+        "wordCount": 1550,
+        "detectedTopics": [
+          "candidate-screening",
+          "hr-tech"
+        ],
+        "contentType": "opinion",
+        "mentionsProducts": true,
+        "mentionsCompetitors": [],
+        "domain": "apso.org.za"
+      },
+      "author": {
+        "name": "Livingstone",
+        "isFreelance": false,
+        "isEditor": false,
+        "worksForPublication": "apso.org.za",
+        "bestContactMethod": "contact-form",
+        "contactNotes": "LinkedIn profile found. Contact form available",
+        "linkedInUrl": "https://www.linkedin.com/in/glencathey",
+        "contactFormUrl": "https://apso.org.za/contact-us"
+      },
+      "score": 44,
+      "scoreBreakdown": {
+        "topicalRelevance": 12,
+        "articleQuality": 14,
+        "updateability": 2,
+        "authorCredibility": 7,
+        "competitiveGap": 5,
+        "reachability": 4
+      },
+      "priority": "moderate",
+      "outreach": {
+        "score": 44,
+        "priority": "moderate",
+        "opportunityReason": "Focuses on candidate screening - core Aligna use case.",
+        "angle": "The article discusses scheduling challenges in recruiting but doesn't mention phone-first AI screening that eliminates scheduling entirely - candidates just call a number anytime.",
+        "suggestedSubject": "Thought on your article about recruiting automation",
+        "suggestedEmailDraft": "Subject: Thought on your article about recruiting automation\n\nHi Livingstone,\n\nI recently read your article \"How ChatGPT Will Impact Recruiting and Hiring\" on Apso Org Za and found it really insightful — especially your thoughtful analysis of AI's role in recruiting.\n\nThe article discusses scheduling challenges in recruiting but doesn't mention phone-first AI screening that eliminates scheduling entirely - candidates just call a number anytime.\n\nI'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:\n\n• Real-time AI phone conversations (not pre-recorded video responses)\n• Built on LiveKit + Azure OpenAI for voice-first candidate experience\n• Eliminates scheduling complexity - candidates just call a number\n• Dual-sided platform: candidates AND employers interact via AI voice\n\nSince your article highlights scheduling challenges, Aligna's approach of 'call anytime' might resonate with your audience - no booking required.\n\nWould a reference to Aligna as an example of conversational AI in recruiting be useful for your readers?\n\nI completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.\n\nBest,\n[Your Name]\nAligna Team\n\n---\n📞 Live demo: https://www.align-a.com\n🔧 Built by MIT alum Kiarash Adl",
+        "contactMethod": "contact-form",
+        "estimatedResponseRate": "low"
+      },
+      "createdAt": "2025-12-17T12:27:24.017Z",
+      "updatedAt": "2025-12-17T12:27:24.017Z"
+    },
+    {
+      "id": "972c2ead-a41b-43c3-87d5-ebcde172e881",
+      "article": {
+        "title": "AI Voice Agent Platform for Phone Call Automation - Retell AI",
+        "url": "https://www.retellai.com/",
+        "publicationName": "Retellai",
+        "publishDate": null,
+        "lastUpdated": null,
+        "fullText": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n              Supercharge your Call Operations with Voice AI AgentsDiscover the new way to build, test, deploy, and monitor production-ready AI voice agents at scale.Try Our Live DemoDiscover how our AI caller transforms customer conversations.Receive a live call from our agentThank you! Your submission has been received!Oops! Something went wrong while submitting the form.How it Works01BuildUtilize the voice AI API and our intuitive agent builder to create custo...",
+        "excerpt": "Supercharge your Call Operations with Voice AI AgentsDiscover the new way to build, test, deploy, and monitor production-ready AI voice agents at scale.Try Our Live DemoDiscover how our AI caller t...",
+        "wordCount": 690,
+        "detectedTopics": [
+          "voice-ai"
+        ],
+        "contentType": "opinion",
+        "mentionsProducts": true,
+        "mentionsCompetitors": [],
+        "domain": "www.retellai.com"
+      },
+      "author": {
+        "name": "Unknown Author",
+        "isFreelance": false,
+        "isEditor": false,
+        "worksForPublication": "www.retellai.com",
+        "bestContactMethod": "contact-form",
+        "contactNotes": "Twitter: @retellai. Contact form available",
+        "twitterHandle": "retellai",
+        "contactFormUrl": "https://www.retellai.com/about-us"
+      },
+      "score": 44,
+      "scoreBreakdown": {
+        "topicalRelevance": 15,
+        "articleQuality": 11,
+        "updateability": 2,
+        "authorCredibility": 7,
+        "competitiveGap": 5,
+        "reachability": 4
+      },
+      "priority": "moderate",
+      "outreach": {
+        "score": 44,
+        "priority": "moderate",
+        "opportunityReason": "Already discusses voice AI - perfect fit for Aligna mention.",
+        "angle": "This article about recruiting innovation could reference Aligna as an example of MIT-founded technical recruiting solutions.",
+        "suggestedSubject": "Thought on your article about recruiting automation",
+        "suggestedEmailDraft": "Subject: Thought on your article about recruiting automation\n\nHi Unknown,\n\nI recently read your article \"AI Voice Agent Platform for Phone Call Automation - Retell AI\" on Retellai and found it really insightful — particularly the insight that how 99% uptime and effortless fallback.\n\nThis article about recruiting innovation could reference Aligna as an example of MIT-founded technical recruiting solutions.\n\nI'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:\n\n• Real-time AI phone conversations (not pre-recorded video responses)\n• Built on LiveKit + Azure OpenAI for voice-first candidate experience\n• Eliminates scheduling complexity - candidates just call a number\n• Dual-sided platform: candidates AND employers interact via AI voice\n\nFor technical recruiting (which your article focuses on), our open-source approach and MIT founder background might add credibility.\n\nWould a reference to Aligna as an example of conversational AI in recruiting be useful for your readers?\n\nI completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.\n\nBest,\n[Your Name]\nAligna Team\n\n---\n📞 Live demo: https://www.align-a.com\n🔧 Built by MIT alum Kiarash Adl",
+        "contactMethod": "contact-form",
+        "estimatedResponseRate": "low"
+      },
+      "createdAt": "2025-12-17T12:28:49.144Z",
+      "updatedAt": "2025-12-17T12:28:49.144Z"
+    },
+    {
+      "id": "b1412095-cf18-4687-8751-73809e74d6fd",
+      "article": {
+        "title": "SeekOut Brings GPT4 To Recruiters. Eightfold Launches Copilots For HR.",
+        "url": "https://joshbersin.com/2023/04/seekout-brings-gpt4-to-recruiters-eightfold-launches-copilots-for-hr/",
+        "publicationName": "JOSH BERSIN",
+        "publishDate": "2023-04-04T13:17:22.000Z",
+        "lastUpdated": "2023-04-06T09:47:39.000Z",
+        "fullText": "\n          Two exciting AI announcements for HR today: SeekOut Assist and Eightfold Copilots for HR.\nSeekOut Announcement: Giving Recruiters SuperPowers\nSeekOut, a fast-growing recruiting and talent intelligence vendor, introduced one of the most exciting new applications of Generative AI today: Seekout Assist. This new product, which builds on the company’s powerful talent intelligence platform, gives recruiters and HR leaders one of the most “instant on” uses of GPT to super-power recruiting.\n...",
+        "excerpt": "Two exciting AI announcements for HR today: SeekOut Assist and Eightfold Copilots for HR. SeekOut Announcement: Giving Recruiters SuperPowers SeekOut, a fast-growing recruiting and talent intellige...",
+        "wordCount": 1246,
+        "detectedTopics": [
+          "hr-tech",
+          "startup"
+        ],
+        "contentType": "news",
+        "mentionsProducts": true,
+        "mentionsCompetitors": [],
+        "domain": "joshbersin.com"
+      },
+      "author": {
+        "name": "joshbersin",
+        "isFreelance": false,
+        "isEditor": false,
+        "worksForPublication": "joshbersin.com",
+        "bestContactMethod": "contact-form",
+        "contactNotes": "LinkedIn profile found. Twitter: @Josh_Bersin. Contact form available",
+        "linkedInUrl": "https://www.linkedin.com/in/guptaanoop/",
+        "twitterHandle": "Josh_Bersin",
+        "contactFormUrl": "https://joshbersin.com/about-2/"
+      },
+      "score": 43,
+      "scoreBreakdown": {
+        "topicalRelevance": 12,
+        "articleQuality": 14,
+        "updateability": 1,
+        "authorCredibility": 7,
+        "competitiveGap": 5,
+        "reachability": 4
+      },
+      "priority": "moderate",
+      "outreach": {
+        "score": 43,
+        "priority": "moderate",
+        "opportunityReason": "",
+        "angle": "This article about recruiting innovation could reference Aligna as an example of MIT-founded technical recruiting solutions.",
+        "suggestedSubject": "Thought on your recruiting tech coverage",
+        "suggestedEmailDraft": "Subject: Thought on your recruiting tech coverage\n\nHi joshbersin,\n\nI recently read your article \"SeekOut Brings GPT4 To Recruiters. Eightfold Launches Copilots For HR.\" on JOSH BERSIN and found it really insightful — particularly the insight that how 30%.\n\nThis article about recruiting innovation could reference Aligna as an example of MIT-founded technical recruiting solutions.\n\nI'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:\n\n• Real-time AI phone conversations (not pre-recorded video responses)\n• Built on LiveKit + Azure OpenAI for voice-first candidate experience\n• Eliminates scheduling complexity - candidates just call a number\n• Dual-sided platform: candidates AND employers interact via AI voice\n\nGiven your focus on recruiting innovation, this might be a useful addition for your readers exploring modern screening approaches.\n\nIf you update this article in the future, would mentioning voice-first AI screening fit your narrative?\n\nI completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.\n\nBest,\n[Your Name]\nAligna Team\n\n---\n📞 Live demo: https://www.align-a.com\n🔧 Built by MIT alum Kiarash Adl",
+        "contactMethod": "contact-form",
+        "estimatedResponseRate": "low"
+      },
+      "createdAt": "2025-12-17T12:28:38.153Z",
+      "updatedAt": "2025-12-17T12:28:38.153Z"
+    },
+    {
+      "id": "7da47462-5309-4f56-b5b2-5440be32d290",
+      "article": {
+        "title": "Voice AI",
+        "url": "https://www.chatsimple.ai/voice-ai-agent",
+        "publicationName": "Chatsimple Ai",
+        "publishDate": null,
+        "lastUpdated": null,
+        "fullText": "Expert in making the first move. Mimics a website \"calling\" the visitor to kick-start conversations.Real-time RecommendationsServes up relevant pages, calendars, or case studies instantly. Tailored to each visitor's needs.Offers a range of male and female voices. Match your brand's unique personality.Speaks multiple languages fluently. Connects with visitors from around the globe.More than just talk. Embodies your brand's voice and values seamlessly.Equipped with world-class support strategies. ...",
+        "excerpt": "Expert in making the first move. Mimics a website \"calling\" the visitor to kick-start conversations.Real-time RecommendationsServes up relevant pages, calendars, or case studies instantly. Tailored...",
+        "wordCount": 71,
+        "detectedTopics": [
+          "voice-ai"
+        ],
+        "contentType": "opinion",
+        "mentionsProducts": true,
+        "mentionsCompetitors": [],
+        "domain": "www.chatsimple.ai"
+      },
+      "author": {
+        "name": "Unknown Author",
+        "isFreelance": false,
+        "isEditor": false,
+        "worksForPublication": "www.chatsimple.ai",
+        "bestContactMethod": "contact-form",
+        "contactNotes": "Contact form available",
+        "contactFormUrl": "https://www.chatsimple.ai/contact-us"
+      },
+      "score": 43,
+      "scoreBreakdown": {
+        "topicalRelevance": 15,
+        "articleQuality": 10,
+        "updateability": 2,
+        "authorCredibility": 7,
+        "competitiveGap": 5,
+        "reachability": 4
+      },
+      "priority": "moderate",
+      "outreach": {
+        "score": 43,
+        "priority": "moderate",
+        "opportunityReason": "Already discusses voice AI - perfect fit for Aligna mention.",
+        "angle": "This article covers candidate screening but doesn't mention the emerging category of live voice AI interviews, which offer a more conversational alternative to async video.",
+        "suggestedSubject": "Thought on your article about recruiting automation",
+        "suggestedEmailDraft": "Subject: Thought on your article about recruiting automation\n\nHi Unknown,\n\nI recently read your article \"Voice AI\" on Chatsimple Ai and found it really insightful — especially your thoughtful analysis of AI's role in recruiting.\n\nThis article covers candidate screening but doesn't mention the emerging category of live voice AI interviews, which offer a more conversational alternative to async video.\n\nI'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:\n\n• Real-time AI phone conversations (not pre-recorded video responses)\n• Built on LiveKit + Azure OpenAI for voice-first candidate experience\n• Eliminates scheduling complexity - candidates just call a number\n• Dual-sided platform: candidates AND employers interact via AI voice\n\nGiven your focus on recruiting innovation, this might be a useful addition for your readers exploring modern screening approaches.\n\nWould a reference to Aligna as an example of conversational AI in recruiting be useful for your readers?\n\nI completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.\n\nBest,\n[Your Name]\nAligna Team\n\n---\n📞 Live demo: https://www.align-a.com\n🔧 Built by MIT alum Kiarash Adl",
+        "contactMethod": "contact-form",
+        "estimatedResponseRate": "low"
+      },
+      "createdAt": "2025-12-17T12:29:06.053Z",
+      "updatedAt": "2025-12-17T12:29:06.053Z"
+    },
+    {
+      "id": "d4e5da96-c432-46f6-86df-be30a916df72",
+      "article": {
+        "title": "Software for Employment Applications I Case Study - Clover Dynamics",
+        "url": "https://www.cloverdynamics.com/case-studies/khibra",
+        "publicationName": "Clover Dynamics",
+        "publishDate": null,
+        "lastUpdated": null,
+        "fullText": " The challengeOur client needed a platform that matches companies and youth for working cooperation. The platform where students and alumni can find their first job by building a comprehensive CV/resume and applying to a different job posted.Implementation of the Virtual Career Fair.\nPossibility to create a video for different user roles in order to have a better presentation.Accelerate ahead of competitors with machine customer capabilities, agentic commerce, and AI-native systems built from th...",
+        "excerpt": "The challengeOur client needed a platform that matches companies and youth for working cooperation. The platform where students and alumni can find their first job by building a comprehensive CV/re...",
+        "wordCount": 365,
+        "detectedTopics": [
+          "candidate-screening",
+          "hr-tech",
+          "interview-automation",
+          "startup"
+        ],
+        "contentType": "case-study",
+        "mentionsProducts": true,
+        "mentionsCompetitors": [],
+        "domain": "www.cloverdynamics.com"
+      },
+      "author": {
+        "name": "Unknown Author",
+        "isFreelance": false,
+        "isEditor": false,
+        "worksForPublication": "www.cloverdynamics.com",
+        "bestContactMethod": "contact-form",
+        "contactNotes": "Twitter: @CloverDynamics. Contact form available",
+        "twitterHandle": "CloverDynamics",
+        "contactFormUrl": "https://www.cloverdynamics.com/contact-us?cta_type=default&from=header&sub_from="
+      },
+      "score": 42,
+      "scoreBreakdown": {
+        "topicalRelevance": 12,
+        "articleQuality": 12,
+        "updateability": 2,
+        "authorCredibility": 7,
+        "competitiveGap": 5,
+        "reachability": 4
+      },
+      "priority": "moderate",
+      "outreach": {
+        "score": 42,
+        "priority": "moderate",
+        "opportunityReason": "Focuses on candidate screening - core Aligna use case.",
+        "angle": "The article discusses scheduling challenges in recruiting but doesn't mention phone-first AI screening that eliminates scheduling entirely - candidates just call a number anytime.",
+        "suggestedSubject": "Related case study for your recruiting feature",
+        "suggestedEmailDraft": "Subject: Related case study for your recruiting feature\n\nHi Unknown,\n\nI recently read your article \"Software for Employment Applications I Case Study - Clover Dynamics\" on Clover Dynamics and found it really insightful — particularly the insight that how 35% fewer bugs during development thro.\n\nThe article discusses scheduling challenges in recruiting but doesn't mention phone-first AI screening that eliminates scheduling entirely - candidates just call a number anytime.\n\nI'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:\n\n• Real-time AI phone conversations (not pre-recorded video responses)\n• Built on LiveKit + Azure OpenAI for voice-first candidate experience\n• Eliminates scheduling complexity - candidates just call a number\n• Dual-sided platform: candidates AND employers interact via AI voice\n\nSince your article highlights scheduling challenges, Aligna's approach of 'call anytime' might resonate with your audience - no booking required.\n\nWould a reference to Aligna as an example of conversational AI in recruiting be useful for your readers?\n\nI completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.\n\nBest,\n[Your Name]\nAligna Team\n\n---\n📞 Live demo: https://www.align-a.com\n🔧 Built by MIT alum Kiarash Adl",
+        "contactMethod": "contact-form",
+        "estimatedResponseRate": "low"
+      },
+      "createdAt": "2025-12-17T12:29:45.449Z",
+      "updatedAt": "2025-12-17T12:29:45.449Z"
+    },
+    {
+      "id": "3d86a33d-6dda-4c3f-bacb-dd943ef4d064",
+      "article": {
+        "title": "E-Book: Recruiting in the Digital Age: Harnessing the Power of OpenAI's GPT-4 — The Source and Recruit Company",
+        "url": "https://www.sourceandrecruit.com/ebook-harnessing-the-power-of-openais-gpt-4",
+        "publicationName": "The Source and Recruit Company",
+        "publishDate": null,
+        "lastUpdated": null,
+        "fullText": "\n  In the fast-paced world of recruitment, staying ahead means embracing innovation. This e-book is an essential guide for HR professionals, recruiters, and talent acquisition specialists. Authored by Matthew Burzon, SHRM-SCP & GPT-4, this e-book explores the transformative power of OpenAI's GPT-4 in the recruitment industry.From crafting persuasive recruitment marketing copy to evaluating HR technology solutions, the book provides a comprehensive overview of how AI can streamline processes and ...",
+        "excerpt": "In the fast-paced world of recruitment, staying ahead means embracing innovation. This e-book is an essential guide for HR professionals, recruiters, and talent acquisition specialists. Authored by...",
+        "wordCount": 142,
+        "detectedTopics": [
+          "candidate-screening",
+          "hr-tech"
+        ],
+        "contentType": "opinion",
+        "mentionsProducts": true,
+        "mentionsCompetitors": [],
+        "domain": "www.sourceandrecruit.com"
+      },
+      "author": {
+        "name": "Unknown Author",
+        "isFreelance": false,
+        "isEditor": false,
+        "worksForPublication": "www.sourceandrecruit.com",
+        "bestContactMethod": "contact-form",
+        "contactNotes": "Twitter: @SourceRecruitCo. Contact form available",
+        "twitterHandle": "SourceRecruitCo",
+        "contactFormUrl": "https://www.sourceandrecruit.com/about-us"
+      },
+      "score": 40,
+      "scoreBreakdown": {
+        "topicalRelevance": 12,
+        "articleQuality": 10,
+        "updateability": 2,
+        "authorCredibility": 7,
+        "competitiveGap": 5,
+        "reachability": 4
+      },
+      "priority": "moderate",
+      "outreach": {
+        "score": 40,
+        "priority": "moderate",
+        "opportunityReason": "Focuses on candidate screening - core Aligna use case.",
+        "angle": "This article covers candidate screening but doesn't mention the emerging category of live voice AI interviews, which offer a more conversational alternative to async video.",
+        "suggestedSubject": "Thought on your article about recruiting automation",
+        "suggestedEmailDraft": "Subject: Thought on your article about recruiting automation\n\nHi Unknown,\n\nI recently read your article \"E-Book: Recruiting in the Digital Age: Harnessing the Power of OpenAI's GPT-4 — The Source and Recruit Company\" on The Source and Recruit Company and found it really insightful — particularly your perspective on the future of recruitment and.\n\nThis article covers candidate screening but doesn't mention the emerging category of live voice AI interviews, which offer a more conversational alternative to async video.\n\nI'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:\n\n• Real-time AI phone conversations (not pre-recorded video responses)\n• Built on LiveKit + Azure OpenAI for voice-first candidate experience\n• Eliminates scheduling complexity - candidates just call a number\n• Dual-sided platform: candidates AND employers interact via AI voice\n\nFor technical recruiting (which your article focuses on), our open-source approach and MIT founder background might add credibility.\n\nWould a reference to Aligna as an example of conversational AI in recruiting be useful for your readers?\n\nI completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.\n\nBest,\n[Your Name]\nAligna Team\n\n---\n📞 Live demo: https://www.align-a.com\n🔧 Built by MIT alum Kiarash Adl",
+        "contactMethod": "contact-form",
+        "estimatedResponseRate": "low"
+      },
+      "createdAt": "2025-12-17T12:28:37.549Z",
+      "updatedAt": "2025-12-17T12:28:37.549Z"
+    },
+    {
+      "id": "4990bb50-308e-4efc-96c6-1b9190f36998",
+      "article": {
+        "title": "AI Reports 2.0: Where recruiting gets its edge",
+        "url": "https://www.metaview.ai/resources/blog/ai-reports-2-0",
+        "publicationName": "Metaview Ai",
+        "publishDate": null,
+        "lastUpdated": null,
+        "fullText": "Hiring is a competitive game. Speed, precision, and alignment are how you win. If you want to close top talent and make confident calls internally, you need more than instinct. You need real data and a timely pulse on your interviews and the market.That’s what AI Reports was built for: to give hiring teams live, customizable views of your hiring process and pipeline, grounded in real interviews and responsive to what’s happening now.And now, we’ve launched AI Reports 2.0— a sharper, more flexibl...",
+        "excerpt": "Hiring is a competitive game. Speed, precision, and alignment are how you win. If you want to close top talent and make confident calls internally, you need more than instinct. You need real data a...",
+        "wordCount": 627,
+        "detectedTopics": [
+          "candidate-screening"
+        ],
+        "contentType": "opinion",
+        "mentionsProducts": true,
+        "mentionsCompetitors": [],
+        "domain": "www.metaview.ai"
+      },
+      "author": {
+        "name": "Unknown Author",
+        "isFreelance": false,
+        "isEditor": false,
+        "worksForPublication": "www.metaview.ai",
+        "bestContactMethod": "unknown",
+        "contactNotes": "Limited contact info available"
+      },
+      "score": 37,
+      "scoreBreakdown": {
+        "topicalRelevance": 12,
+        "articleQuality": 11,
+        "updateability": 2,
+        "authorCredibility": 7,
+        "competitiveGap": 5,
+        "reachability": 0
+      },
+      "priority": "weak",
+      "outreach": {
+        "score": 37,
+        "priority": "weak",
+        "opportunityReason": "Focuses on candidate screening - core Aligna use case.",
+        "angle": "This article covers candidate screening but doesn't mention the emerging category of live voice AI interviews, which offer a more conversational alternative to async video.",
+        "suggestedSubject": "Thought on your article about recruiting automation",
+        "suggestedEmailDraft": "Subject: Thought on your article about recruiting automation\n\nHi Unknown,\n\nI recently read your article \"AI Reports 2.0: Where recruiting gets its edge\" on Metaview Ai and found it really insightful — particularly your breakdown of the hiring process.\n\nThis article covers candidate screening but doesn't mention the emerging category of live voice AI interviews, which offer a more conversational alternative to async video.\n\nI'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:\n\n• Real-time AI phone conversations (not pre-recorded video responses)\n• Built on LiveKit + Azure OpenAI for voice-first candidate experience\n• Eliminates scheduling complexity - candidates just call a number\n• Dual-sided platform: candidates AND employers interact via AI voice\n\nGiven your focus on recruiting innovation, this might be a useful addition for your readers exploring modern screening approaches.\n\nWould a reference to Aligna as an example of conversational AI in recruiting be useful for your readers?\n\nI completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.\n\nBest,\n[Your Name]\nAligna Team\n\n---\n📞 Live demo: https://www.align-a.com\n🔧 Built by MIT alum Kiarash Adl",
+        "contactMethod": "unknown",
+        "estimatedResponseRate": "low"
+      },
+      "createdAt": "2025-12-17T12:26:42.532Z",
+      "updatedAt": "2025-12-17T12:26:42.532Z"
+    },
+    {
+      "id": "3909ca01-4808-4952-9e6f-ce9ac6ff6e2d",
+      "article": {
+        "title": "RecruitGPT©: the ultimate people connection engine powered by GPT",
+        "url": "https://www.herohunt.ai/blog/recruitgpt-the-ultimate-people-connection-engine",
+        "publicationName": "Herohunt Ai",
+        "publishDate": null,
+        "lastUpdated": null,
+        "fullText": "Connection between people has always been driven by our human ability to connect and socialize.But now more than ever it’s also driven by another component: data.With a potential talent pool of 8 billion people worldwide you need to be able to not only find the right people based on their public data but also be able to find ways of reaching them.RecruitGPT by HeroHunt.ai lets you use the analytical power of GPT4 to find the right people to engage with.RecruitGPT searches people on autopilot acr...",
+        "excerpt": "Connection between people has always been driven by our human ability to connect and socialize.But now more than ever it’s also driven by another component: data.With a potential talent pool of 8 b...",
+        "wordCount": 322,
+        "detectedTopics": [],
+        "contentType": "guide",
+        "mentionsProducts": true,
+        "mentionsCompetitors": [],
+        "domain": "www.herohunt.ai"
+      },
+      "author": {
+        "name": "Unknown Author",
+        "isFreelance": false,
+        "isEditor": false,
+        "worksForPublication": "www.herohunt.ai",
+        "bestContactMethod": "contact-form",
+        "contactNotes": "LinkedIn profile found. Contact form available",
+        "linkedInUrl": "https://www.linkedin.com/in/yumaheymans/",
+        "contactFormUrl": "https://www.herohunt.ai/about"
+      },
+      "score": 37,
+      "scoreBreakdown": {
+        "topicalRelevance": 0,
+        "articleQuality": 14,
+        "updateability": 7,
+        "authorCredibility": 7,
+        "competitiveGap": 5,
+        "reachability": 4
+      },
+      "priority": "weak",
+      "outreach": {
+        "score": 37,
+        "priority": "weak",
+        "opportunityReason": "Comprehensive guide could benefit from voice AI perspective.",
+        "angle": "This article covers candidate screening but doesn't mention the emerging category of live voice AI interviews, which offer a more conversational alternative to async video.",
+        "suggestedSubject": "Voice AI perspective for your recruiting guide",
+        "suggestedEmailDraft": "Subject: Voice AI perspective for your recruiting guide\n\nHi Unknown,\n\nI recently read your article \"RecruitGPT©: the ultimate people connection engine powered by GPT\" on Herohunt Ai and found it really insightful — especially the practical, actionable framework you've outlined.\n\nThis article covers candidate screening but doesn't mention the emerging category of live voice AI interviews, which offer a more conversational alternative to async video.\n\nI'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:\n\n• Real-time AI phone conversations (not pre-recorded video responses)\n• Built on LiveKit + Azure OpenAI for voice-first candidate experience\n• Eliminates scheduling complexity - candidates just call a number\n• Dual-sided platform: candidates AND employers interact via AI voice\n\nGiven your focus on recruiting innovation, this might be a useful addition for your readers exploring modern screening approaches.\n\nWould a reference to Aligna as an example of conversational AI in recruiting be useful for your readers?\n\nI completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.\n\nBest,\n[Your Name]\nAligna Team\n\n---\n📞 Live demo: https://www.align-a.com\n🔧 Built by MIT alum Kiarash Adl",
+        "contactMethod": "contact-form",
+        "estimatedResponseRate": "low"
+      },
+      "createdAt": "2025-12-17T12:27:24.478Z",
+      "updatedAt": "2025-12-17T12:27:24.478Z"
+    },
+    {
+      "id": "d3a8eb2b-258b-4148-89be-dd12d781d070",
+      "article": {
+        "title": "Microsoft Applied Skills: Develop generative AI apps with Azure OpenAI and Semantic Kernel - Applied Skills",
+        "url": "https://learn.microsoft.com/en-us/credentials/applied-skills/develop-ai-agents-using-microsoft-azure-openai-and-semantic-kernel/",
+        "publicationName": "Learn Microsoft",
+        "publishDate": null,
+        "lastUpdated": null,
+        "fullText": "\n\n\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\tApplied Skills\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\tValidate your technical skills and open doors to new possibilities of advancement with Microsoft Applied Skills.\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\n\t\t\n\n\t\t\n\n\t\n\t\n\t\tAt a glance\n\t\n\t\n\n\t\n\n\n\t\n\n\n\t\n\n\n\t\n\n\t\n\n\n\t\n\t\tOverview\n\t\t\nWarning\nThe English language version of this Applied Skill assessment lab was updated on April 30, 2025. Review the study guide linked in the Applied Skills resources section for details about these changes.\n\nTo earn this Microso...",
+        "excerpt": "Applied Skills Validate your technical skills and open doors to new possibilities of advancement with Microsoft Applied Skills. At a glance Overview Warning The English language version of this App...",
+        "wordCount": 289,
+        "detectedTopics": [
+          "candidate-screening"
+        ],
+        "contentType": "opinion",
+        "mentionsProducts": true,
+        "mentionsCompetitors": [],
+        "domain": "learn.microsoft.com"
+      },
+      "author": {
+        "name": "bipach",
+        "isFreelance": false,
+        "isEditor": false,
+        "worksForPublication": "learn.microsoft.com",
+        "bestContactMethod": "unknown",
+        "contactNotes": "Limited contact info available"
+      },
+      "score": 36,
+      "scoreBreakdown": {
+        "topicalRelevance": 12,
+        "articleQuality": 10,
+        "updateability": 2,
+        "authorCredibility": 7,
+        "competitiveGap": 5,
+        "reachability": 0
+      },
+      "priority": "weak",
+      "outreach": {
+        "score": 36,
+        "priority": "weak",
+        "opportunityReason": "Focuses on candidate screening - core Aligna use case.",
+        "angle": "This article about Azure OpenAI could feature Aligna as a real-world implementation using Azure AI for voice-based recruiting.",
+        "suggestedSubject": "Thought on your article about recruiting automation",
+        "suggestedEmailDraft": "Subject: Thought on your article about recruiting automation\n\nHi bipach,\n\nI recently read your article \"Microsoft Applied Skills: Develop generative AI apps with Azure OpenAI and Semantic Kernel - Applied Skills\" on Learn Microsoft and found it really insightful — especially your thoughtful analysis of AI's role in recruiting.\n\nThis article about Azure OpenAI could feature Aligna as a real-world implementation using Azure AI for voice-based recruiting.\n\nI'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:\n\n• Real-time AI phone conversations (not pre-recorded video responses)\n• Built on LiveKit + Azure OpenAI for voice-first candidate experience\n• Eliminates scheduling complexity - candidates just call a number\n• Dual-sided platform: candidates AND employers interact via AI voice\n\nFor technical recruiting (which your article focuses on), our open-source approach and MIT founder background might add credibility.\n\nWould a reference to Aligna as an example of conversational AI in recruiting be useful for your readers?\n\nI completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.\n\nBest,\n[Your Name]\nAligna Team\n\n---\n📞 Live demo: https://www.align-a.com\n🔧 Built by MIT alum Kiarash Adl",
+        "contactMethod": "unknown",
+        "estimatedResponseRate": "low"
+      },
+      "createdAt": "2025-12-17T12:26:34.385Z",
+      "updatedAt": "2025-12-17T12:26:34.385Z"
+    }
+  ]
+}

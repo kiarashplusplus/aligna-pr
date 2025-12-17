@@ -1,0 +1,53 @@
+# Outreach for: The Best AI Recruiting Platforms (The Ultimate Extremely Detailed Guide)
+# Score: 66 (strong)
+# Author: Unknown Author
+# Contact: contact-form
+# URL: https://www.herohunt.ai/blog/the-best-ai-recruiting-platforms-the-ultimate-extremely-detailed-guide
+
+---
+
+Subject: Voice AI perspective for your recruiting guide
+
+Hi Unknown,
+
+I recently read your article "The Best AI Recruiting Platforms (The Ultimate Extremely Detailed Guide)" on Herohunt Ai and found it really insightful — particularly the insight that how 50% by quickly zeroing in on high-fit.
+
+Article mentions HireVue feels impersonal/robotic - Aligna uses live AI conversations that feel more natural than recording videos to a screen.
+
+This article discusses async video screening but doesn't mention live conversational AI alternatives like Aligna, which eliminates the video recording anxiety many candidates experience.
+
+I'm reaching out because we recently launched Aligna (https://www.align-a.com), a conversational AI recruiter that conducts live phone interviews instead of async video screening. Some key differentiators:
+
+• Real-time AI phone conversations (not pre-recorded video responses)
+• Built on LiveKit + Azure OpenAI for voice-first candidate experience
+• Eliminates scheduling complexity - candidates just call a number
+• Dual-sided platform: candidates AND employers interact via AI voice
+
+For your readers evaluating async video tools, Aligna offers a phone-first alternative that many candidates find less intimidating than recording video responses.
+
+Would a reference to Aligna as an example of conversational AI in recruiting be useful for your readers?
+
+I completely understand if this doesn't fit your editorial direction. Either way, thanks for writing great content about recruiting innovation.
+
+Best,
+[Your Name]
+Aligna Team
+
+---
+📞 Live demo: https://www.align-a.com
+🔧 Built by MIT alum Kiarash Adl
+
+---
+
+## Score Breakdown:
+• Topical Relevance: 18/30 - Strong match - covers AI-powered candidate screening
+• Article Quality: 20/20 - Excellent quality - comprehensive, product-focused content
+• Updateability: 7/20 - Low update likelihood - dated or static content type
+• Author Credibility: 7/15
+• Competitive Gap: 10/10 (mentions competitors but not Aligna!)
+• Reachability: 4/5
+
+## Notes:
+Article mentions HireVue feels impersonal/robotic - Aligna uses live AI conversations that feel more natural than recording videos to a screen.
+
+This article discusses async video screening but doesn't mention live conversational AI alternatives like Aligna, which eliminates the video recording anxiety many candidates experience.
