@@ -90,6 +90,203 @@ export function generateAsk(article: Article, author: AuthorContact): string {
 }
 
 /**
+ * Truncate text at a natural word boundary
+ */
+function truncateAtWord(text: string, maxLen: number): string {
+  if (text.length <= maxLen) return text;
+  const truncated = text.slice(0, maxLen);
+  const lastSpace = truncated.lastIndexOf(' ');
+  if (lastSpace > maxLen * 0.6) {
+    return truncated.slice(0, lastSpace);
+  }
+  return truncated;
+}
+
+/**
+ * Clean up extracted topic for compliment
+ */
+function cleanTopic(topic: string): string {
+  let cleaned = truncateAtWord(topic, 45)
+    .replace(/[.,;:!?]+$/, '')  // Remove trailing punctuation
+    .replace(/\s+(is|are|was|were|and|or|the|a|an|for|to|in|on|at|by)$/i, '')  // Remove trailing prepositions/articles
+    .trim();
+  
+  // If it still ends with incomplete words, try to find last complete thought
+  if (cleaned.match(/\s+(your?|their|his|her|its|who|which|that)$/i)) {
+    cleaned = cleaned.replace(/\s+\w+$/, '');
+  }
+  
+  return cleaned;
+}
+
+/**
+ * Extract a specific compliment/insight from the article content
+ * Finds meaningful points the author made that we can genuinely praise
+ */
+export function generateSpecificCompliment(article: Article): string {
+  const text = article.fullText.toLowerCase();
+  const sentences = article.fullText
+    .split(/[.!?]+/)
+    .map(s => s.trim())
+    .filter(s => s.length > 30 && s.length < 200);
+
+  // Look for insightful patterns and extract the actual content
+  const insightPatterns = [
+    // Data/statistics mentions - extract the stat and context
+    { 
+      pattern: /(\d+%|\d+ percent)/i, 
+      extract: (s: string) => {
+        const match = s.match(/(\d+%|\d+ percent)[^.]{0,35}/i);
+        return match ? cleanTopic(`how ${match[0].toLowerCase()}`) : null;
+      },
+      prefix: 'particularly the insight that' 
+    },
+    { 
+      pattern: /research (shows|found|indicates|suggests)/i, 
+      extract: (s: string) => {
+        const match = s.match(/research\s+(shows?|found|indicates?|suggests?)\s+(?:that\s+)?(.{15,45})/i);
+        return match ? cleanTopic(match[2].toLowerCase()) : null;
+      },
+      prefix: 'especially your point that' 
+    },
+    
+    // Strong opinions/insights
+    { 
+      pattern: /the (key|biggest|main|real) (challenge|problem|issue|advantage)/i, 
+      extract: (s: string) => {
+        const match = s.match(/(key|biggest|main|real)\s+(challenge|problem|issue|advantage)[^.]{5,35}/i);
+        return match ? cleanTopic(`the ${match[0].toLowerCase()}`) : null;
+      },
+      prefix: 'particularly your insight about' 
+    },
+    { 
+      pattern: /the (future|trend) of/i, 
+      extract: (s: string) => {
+        const match = s.match(/the (future|trend) of\s+(\w+(?:\s+\w+)?)/i);
+        return match ? `the ${match[1].toLowerCase()} of ${match[2].toLowerCase()}` : null;
+      },
+      prefix: 'particularly your perspective on' 
+    },
+    
+    // Practical advice
+    { 
+      pattern: /best practice/i, 
+      extract: () => 'best practices',
+      prefix: 'especially your coverage of' 
+    },
+    { 
+      pattern: /how to (choose|select|evaluate|pick)/i, 
+      extract: (s: string) => {
+        const match = s.match(/how to (choose|select|evaluate|pick)\s+(?:the\s+)?(?:right\s+)?(\w+(?:\s+\w+)?)/i);
+        return match ? `how to ${match[1].toLowerCase()} ${match[2].toLowerCase()}` : null;
+      },
+      prefix: 'especially your guidance on' 
+    },
+    
+    // Candidate/recruiter experience focus - return simple topic
+    { 
+      pattern: /candidate experience/i, 
+      extract: () => 'candidate experience',
+      prefix: 'particularly your focus on' 
+    },
+    { 
+      pattern: /hiring (process|workflow|pipeline)/i, 
+      extract: () => 'the hiring process',
+      prefix: 'particularly your breakdown of' 
+    },
+  ];
+
+  // Try to find a sentence matching our patterns
+  for (const { pattern, extract, prefix } of insightPatterns) {
+    for (const sentence of sentences) {
+      if (pattern.test(sentence)) {
+        const topic = extract(sentence);
+        if (topic) {
+          return `${prefix} ${topic}`;
+        }
+      }
+    }
+  }
+
+  // Content-type specific fallbacks with article context
+  if (article.contentType === 'listicle') {
+    const toolCount = (text.match(/\d+\s*(tool|software|platform|solution)/gi) || []).length;
+    if (toolCount > 0) {
+      return 'particularly the comprehensive breakdown of each tool\'s strengths';
+    }
+    return 'especially the structured comparison format that makes it easy for readers to evaluate options';
+  }
+
+  if (article.contentType === 'comparison') {
+    return 'particularly the balanced analysis that helps readers make informed decisions';
+  }
+
+  if (article.contentType === 'guide') {
+    return 'especially the practical, actionable framework you\'ve outlined';
+  }
+
+  if (article.contentType === 'case-study') {
+    return 'particularly the real-world examples that illustrate the concepts';
+  }
+
+  // Topic-based fallbacks
+  if (text.includes('candidate experience')) {
+    return 'particularly your emphasis on the candidate perspective';
+  }
+
+  if (text.includes('ai') || text.includes('artificial intelligence')) {
+    return 'especially your thoughtful analysis of AI\'s role in recruiting';
+  }
+
+  if (text.includes('automation')) {
+    return 'particularly your nuanced take on automation in the hiring process';
+  }
+
+  // Generic but still specific-sounding
+  return 'particularly the depth of research that went into this piece';
+}
+
+/**
+ * Extract the main topic/subject from a sentence for the compliment
+ */
+function extractTopicFromSentence(sentence: string): string | null {
+  // Clean up the sentence
+  let cleaned = sentence
+    .replace(/^(the|a|an|this|that|these|those)\s+/i, '')
+    .trim();
+
+  // For data points, extract the statistic context
+  const statMatch = cleaned.match(/(\d+%|\d+ percent)[^.]*?(recruiter|candidate|hiring|interview|screening|time|cost)/i);
+  if (statMatch) {
+    return `how ${statMatch[0].toLowerCase().trim()}`;
+  }
+
+  // For "research shows" type sentences, extract what was found
+  const researchMatch = cleaned.match(/(research|study|data|survey)\s+(shows?|found|indicates?|suggests?)\s+(?:that\s+)?(.{20,60})/i);
+  if (researchMatch) {
+    return researchMatch[3].toLowerCase().trim().replace(/[.,;:]+$/, '');
+  }
+
+  // For "key challenge" type sentences
+  const insightMatch = cleaned.match(/(key|biggest|main|real)\s+(challenge|problem|issue|advantage|benefit)[^.]{10,50}/i);
+  if (insightMatch) {
+    return `the ${insightMatch[0].toLowerCase().trim()}`;
+  }
+
+  // Generic: take first meaningful chunk (5-7 words)
+  const words = cleaned.split(/\s+/).slice(0, 6);
+  if (words.length >= 3) {
+    const topic = words.join(' ').toLowerCase().replace(/[.,;:]+$/, '');
+    // Avoid returning fragments that don't make sense
+    if (topic.length > 15 && !topic.endsWith(' the') && !topic.endsWith(' a')) {
+      return topic;
+    }
+  }
+
+  return null;
+}
+
+/**
  * Generate complete personalized email draft
  */
 export function generateEmailDraft(
@@ -101,6 +298,7 @@ export function generateEmailDraft(
   const subject = generateSubject(article);
   const specificValue = generateSpecificValue(article);
   const ask = generateAsk(article, author);
+  const compliment = generateSpecificCompliment(article);
 
   const differentiators = ALIGNA.differentiators
     .map((d) => `• ${d}`)
@@ -110,7 +308,7 @@ export function generateEmailDraft(
 
 Hi ${firstName},
 
-I recently read your article "${article.title}" on ${article.publicationName} and found it really insightful [SPECIFIC COMPLIMENT ABOUT THEIR WORK - e.g., "particularly your point about candidate experience in async screening"].
+I recently read your article "${article.title}" on ${article.publicationName} and found it really insightful — ${compliment}.
 
 ${angle}
 
